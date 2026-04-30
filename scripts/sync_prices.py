@@ -165,7 +165,17 @@ def merge_models(
             else:
                 stats["unchanged"] += 1
         else:
-            stats["unchanged"] += 1
+            # update_existing=False: preserve existing fields, but absorb new fields from upstream
+            if isinstance(merged[key], dict) and isinstance(value, dict):
+                new_fields = {k: v for k, v in value.items() if k not in merged[key]}
+                if new_fields:
+                    merged[key].update(new_fields)
+                    log.info("Model '%s': absorbed %d new field(s) from upstream: %s", key, len(new_fields), list(new_fields))
+                    stats["updated"] += 1
+                else:
+                    stats["unchanged"] += 1
+            else:
+                stats["unchanged"] += 1
 
     return merged, stats
 
