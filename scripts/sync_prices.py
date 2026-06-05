@@ -112,8 +112,9 @@ def fetch_upstream(url: str) -> dict:
 
 
 def filter_upstream(data: dict, config: dict) -> dict:
-    """Apply prefix_filters and exclude_patterns to upstream data."""
+    """Apply prefix_filters, keyword_filters, and exclude_patterns to upstream data."""
     prefixes = tuple(config.get("prefix_filters", []))
+    keywords = tuple(k.lower() for k in config.get("keyword_filters", []))
     excludes = config.get("exclude_patterns", [])
 
     filtered = {}
@@ -121,8 +122,17 @@ def filter_upstream(data: dict, config: dict) -> dict:
         # Exclude first
         if any(pat in key for pat in excludes):
             continue
-        # Then check prefix match
-        if prefixes and not key.startswith(prefixes):
+
+        provider = ""
+        if isinstance(value, dict):
+            provider = str(value.get("litellm_provider", ""))
+        searchable = f"{key}\n{provider}".lower()
+
+        prefix_match = bool(prefixes and key.startswith(prefixes))
+        keyword_match = bool(keywords and any(keyword in searchable for keyword in keywords))
+
+        # Then check inclusion rules
+        if (prefixes or keywords) and not (prefix_match or keyword_match):
             continue
         filtered[key] = value
 

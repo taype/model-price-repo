@@ -24,20 +24,26 @@ All settings live in [`config.json`](config.json):
 | `sync_mode` | `"additive"` (only add new) or `"full"` (replace each run) |
 | `update_existing` | Whether to update pricing data for models already in the output |
 | `prefix_filters` | List of prefixes — a model key must start with one to be included |
-| `exclude_patterns` | Substring patterns to exclude (applied before prefix matching) |
+| `keyword_filters` | Case-insensitive keywords matched against model keys and `litellm_provider` |
+| `exclude_patterns` | Substring patterns to exclude (applied before inclusion matching) |
 | `aliases` | Map alias model keys to existing source models (deep copy pricing) |
 | `custom_models` | Manually defined pricing objects, always injected |
 
-### Adding new model prefixes
+### Adding model families
 
-Edit the `prefix_filters` array in `config.json`:
+Edit `prefix_filters` for direct model-key prefixes and `keyword_filters` for
+provider-prefixed models:
 
 ```json
 {
   "prefix_filters": [
-    "claude-",
-    "gpt-",
-    "your-new-prefix/"
+    "deepseek-",
+    "qwen-"
+  ],
+  "keyword_filters": [
+    "deepseek",
+    "qwen",
+    "dashscope"
   ]
 }
 ```
