@@ -27,17 +27,6 @@
   "exclude_patterns": [
     "sample_spec"
   ],
-  "tiered_pricing_fallback": {
-    "enabled": true,
-    "strategy": "first_tier",
-    "only_when_missing": true,
-    "fields": [
-      "input_cost_per_token",
-      "output_cost_per_token",
-      "output_cost_per_reasoning_token",
-      "cache_read_input_token_cost"
-    ]
-  },
   "aliases": {
     "kimi-k2.5": {
       "source": "moonshot/kimi-k2.5",

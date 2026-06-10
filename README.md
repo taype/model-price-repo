@@ -10,8 +10,7 @@ A GitHub Actions workflow runs every 10 minutes (and on manual trigger):
 2. Filters models by the prefix rules in `config.json`
 3. Merges new models into the existing output (additive — never removes)
 4. Applies alias mappings and custom model definitions
-5. Optionally fills flat pricing fallbacks from `tiered_pricing`
-6. Writes the output JSON + SHA-256 hash, commits only if content changed
+5. Writes the output JSON + SHA-256 hash, commits only if content changed
 
 ## Configuration
 
@@ -27,7 +26,6 @@ All settings live in [`config.json`](config.json):
 | `prefix_filters` | List of prefixes — a model key must start with one to be included |
 | `keyword_filters` | Case-insensitive keywords matched against model keys and `litellm_provider` |
 | `exclude_patterns` | Substring patterns to exclude (applied before inclusion matching) |
-| `tiered_pricing_fallback` | Optional compatibility fallback that copies first-tier prices into missing top-level pricing fields |
 | `aliases` | Map alias model keys to existing source models (deep copy pricing) |
 | `custom_models` | Manually defined pricing objects, always injected |
 
@@ -66,26 +64,6 @@ Aliases create copies of an existing model's pricing under a new key:
 ```
 
 If the source model doesn't exist in the filtered data, the alias is skipped with a warning.
-
-### Tiered pricing fallback
-
-Some upstream models, especially DashScope/Qwen models, publish range-based
-pricing in `tiered_pricing` and leave top-level price fields empty. Enable
-`tiered_pricing_fallback` to copy the first tier into missing flat fields for
-legacy consumers:
-
-```json
-{
-  "tiered_pricing_fallback": {
-    "enabled": true,
-    "strategy": "first_tier",
-    "only_when_missing": true
-  }
-}
-```
-
-`tiered_pricing` remains the authoritative source for exact range-based billing.
-The copied flat fields are only a compatibility fallback.
 
 ## Running locally
 

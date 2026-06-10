@@ -256,65 +256,6 @@ def fill_cache_1hr_pricing(data: dict, config: dict) -> int:
     return count
 
 
-def fill_tiered_pricing_fallbacks(data: dict, config: dict) -> tuple[int, int]:
-    """Fill flat pricing fields from tiered_pricing for legacy consumers.
-
-    The tiered_pricing array remains the authoritative source for range-based
-    billing. This only populates missing top-level fields so downstream systems
-    that do not understand tiers still have a usable base price.
-
-    Returns (models_touched, fields_filled).
-    """
-    fallback_cfg = config.get("tiered_pricing_fallback", {})
-    if not fallback_cfg.get("enabled", False):
-        return 0, 0
-
-    strategy = fallback_cfg.get("strategy", "first_tier")
-    if strategy != "first_tier":
-        log.error("Invalid tiered_pricing_fallback.strategy '%s'; only 'first_tier' is supported.", strategy)
-        sys.exit(1)
-
-    fields = fallback_cfg.get("fields", [
-        "input_cost_per_token",
-        "output_cost_per_token",
-        "output_cost_per_reasoning_token",
-        "cache_read_input_token_cost",
-    ])
-    only_when_missing = fallback_cfg.get("only_when_missing", True)
-
-    models_touched = 0
-    fields_filled = 0
-
-    for key, value in data.items():
-        if not isinstance(value, dict):
-            continue
-
-        tiered_pricing = value.get("tiered_pricing")
-        if not isinstance(tiered_pricing, list) or not tiered_pricing:
-            continue
-
-        first_tier = tiered_pricing[0]
-        if not isinstance(first_tier, dict):
-            continue
-
-        touched = False
-        for field in fields:
-            fallback_value = first_tier.get(field)
-            if fallback_value is None:
-                continue
-            if only_when_missing and value.get(field) is not None:
-                continue
-            value[field] = fallback_value
-            touched = True
-            fields_filled += 1
-
-        if touched:
-            models_touched += 1
-            log.info("Tiered fallback filled for '%s' from first tier.", key)
-
-    return models_touched, fields_filled
-
-
 # ---------------------------------------------------------------------------
 # Output
 # ---------------------------------------------------------------------------
@@ -405,13 +346,10 @@ def main() -> None:
     if custom:
         merged = apply_custom_models(merged, custom)
 
-    # 9. Tiered pricing fallback
-    tiered_models, tiered_fields = fill_tiered_pricing_fallbacks(merged, config)
-
-    # 10. Write output
+    # 9. Write output
     changed, new_hash = write_output(merged, output_path, hash_path, old_hash)
 
-    # 11. Report
+    # 10. Report
     log.info("--- Sync Report ---")
     log.info("Total models in output: %d", len(merged))
     log.info("Added:     %d", stats["added"])
@@ -420,8 +358,6 @@ def main() -> None:
     log.info("Aliases:   %d", len(aliases))
     log.info("Cache 1hr auto-filled: %d", cache_1hr_count)
     log.info("Custom:    %d", len(custom))
-    log.info("Tiered fallback models: %d", tiered_models)
-    log.info("Tiered fallback fields: %d", tiered_fields)
 
     # Machine-readable output for CI
     print(f"CHANGED={str(changed).lower()}")
