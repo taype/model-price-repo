@@ -223,6 +223,65 @@ def apply_custom_models(data: dict, custom: dict) -> dict:
     return data
 
 
+def _tier_end(tier: dict) -> float:
+    """Return the upper bound of a pricing tier, or -1 when unavailable."""
+    value_range = tier.get("range")
+    if not isinstance(value_range, list) or len(value_range) < 2:
+        return -1
+    try:
+        return float(value_range[1])
+    except (TypeError, ValueError):
+        return -1
+
+
+def flatten_tiered_pricing(data: dict) -> int:
+    """Flatten unsupported tiered pricing into top-level cost fields.
+
+    The downstream pricing parser only accepts flat price fields. When upstream
+    provides range-based prices, use the highest-range tier as the conservative
+    flat price and remove the original tiered pricing field.
+    """
+    flattened = 0
+    for key, value in data.items():
+        if not isinstance(value, dict):
+            continue
+
+        tiers = value.get("tiered_pricing")
+        if not isinstance(tiers, list) or not tiers:
+            continue
+
+        highest_tier = max(
+            (tier for tier in tiers if isinstance(tier, dict)),
+            key=_tier_end,
+            default=None,
+        )
+        if highest_tier:
+            copied_fields = []
+            for field, field_value in highest_tier.items():
+                if field == "range":
+                    continue
+                if field_value is None:
+                    continue
+                value[field] = field_value
+                copied_fields.append(field)
+            if copied_fields:
+                log.info(
+                    "Flattened tiered pricing for '%s' using highest range tier: %s",
+                    key,
+                    copied_fields,
+                )
+            else:
+                log.warning(
+                    "Removed tiered pricing for '%s' but found no flat cost fields to copy.",
+                    key,
+                )
+
+        del value["tiered_pricing"]
+        flattened += 1
+
+    return flattened
+
+
 def fill_cache_1hr_pricing(data: dict, config: dict) -> int:
     """Auto-fill missing cache_creation_input_token_cost_above_1hr for matching models.
 
@@ -346,10 +405,13 @@ def main() -> None:
     if custom:
         merged = apply_custom_models(merged, custom)
 
-    # 9. Write output
+    # 9. Flatten unsupported tiered pricing for downstream parsers
+    flattened_tiered_count = flatten_tiered_pricing(merged)
+
+    # 10. Write output
     changed, new_hash = write_output(merged, output_path, hash_path, old_hash)
 
-    # 10. Report
+    # 11. Report
     log.info("--- Sync Report ---")
     log.info("Total models in output: %d", len(merged))
     log.info("Added:     %d", stats["added"])
@@ -358,6 +420,7 @@ def main() -> None:
     log.info("Aliases:   %d", len(aliases))
     log.info("Cache 1hr auto-filled: %d", cache_1hr_count)
     log.info("Custom:    %d", len(custom))
+    log.info("Tiered pricing flattened: %d", flattened_tiered_count)
 
     # Machine-readable output for CI
     print(f"CHANGED={str(changed).lower()}")

@@ -222,28 +222,6 @@
       "output_cost_per_token": 4e-06,
       "cache_creation_input_token_cost": 0,
       "cache_read_input_token_cost": 2.9e-07,
-      "tiered_pricing": [
-        {
-          "input_cost_per_token": 8.6e-07,
-          "output_cost_per_token": 3.4e-06,
-          "cache_creation_input_token_cost": 0,
-          "cache_read_input_token_cost": 1.9e-07,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "input_cost_per_token": 1.15e-06,
-          "output_cost_per_token": 4e-06,
-          "cache_creation_input_token_cost": 0,
-          "cache_read_input_token_cost": 2.9e-07,
-          "range": [
-            32000,
-            200000
-          ]
-        }
-      ],
       "litellm_provider": "zhipu",
       "max_input_tokens": 200000,
       "max_output_tokens": 128000,

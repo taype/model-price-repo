@@ -8,9 +8,10 @@ A GitHub Actions workflow runs every 10 minutes (and on manual trigger):
 
 1. Downloads the full `model_prices_and_context_window.json` from litellm
 2. Filters models by the prefix rules in `config.json`
-3. Merges new models into the existing output (additive — never removes)
+3. Builds the configured output from the filtered upstream data
 4. Applies alias mappings and custom model definitions
-5. Writes the output JSON + SHA-256 hash, commits only if content changed
+5. Flattens upstream range-based prices into top-level cost fields for downstream parsers
+6. Writes the output JSON + SHA-256 hash, commits only if content changed
 
 ## Configuration
 
@@ -28,6 +29,11 @@ All settings live in [`config.json`](config.json):
 | `exclude_patterns` | Substring patterns to exclude (applied before inclusion matching) |
 | `aliases` | Map alias model keys to existing source models (deep copy pricing) |
 | `custom_models` | Manually defined pricing objects, always injected |
+
+Range-based upstream prices are flattened automatically. When a model has
+range-based tiers but no flat price fields, the sync script copies the
+highest-range tier's cost fields to the top level and removes the unsupported
+tier structure from the generated output.
 
 ### Adding model families
 
@@ -81,7 +87,7 @@ Point CRS to the raw output file from this repo:
 MODEL_PRICES_URL=https://raw.githubusercontent.com/<owner>/model-price-repo/main/model_prices_and_context_window.json
 ```
 
-The output JSON structure is identical to what litellm produces (model key -> pricing object), so CRS `pricingService.js` works without changes.
+The output JSON uses the litellm model-key structure, with unsupported range-based prices flattened into top-level cost fields so CRS `pricingService.js` can parse every included model with flat pricing.
 
 ## License
 
