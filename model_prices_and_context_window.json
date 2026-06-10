@@ -78,6 +78,27 @@
     "supports_video_input": true,
     "supports_vision": true
   },
+  "azure_ai/kimi-k2.6": {
+    "input_cost_per_token": 9.5e-07,
+    "litellm_provider": "azure_ai",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "mode": "chat",
+    "output_cost_per_token": 4e-06,
+    "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-kimi-k2-6-in-microsoft-foundry/4513125",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "baseten/MiniMaxAI/MiniMax-M2.5": {
     "input_cost_per_token": 3e-07,
     "litellm_provider": "baseten",
@@ -1054,11 +1075,13 @@
     "supports_tool_choice": true
   },
   "dashscope/qwen-flash": {
+    "input_cost_per_token": 5e-08,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
     "max_tokens": 32768,
     "mode": "chat",
+    "output_cost_per_token": 4e-07,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1083,11 +1106,13 @@
     ]
   },
   "dashscope/qwen-flash-2025-07-28": {
+    "input_cost_per_token": 5e-08,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
     "max_tokens": 32768,
     "mode": "chat",
+    "output_cost_per_token": 4e-07,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1195,11 +1220,14 @@
     "supports_tool_choice": true
   },
   "dashscope/qwen-plus-2025-07-28": {
+    "input_cost_per_token": 4e-07,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
     "max_tokens": 32768,
     "mode": "chat",
+    "output_cost_per_reasoning_token": 4e-06,
+    "output_cost_per_token": 1.2e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1226,11 +1254,14 @@
     ]
   },
   "dashscope/qwen-plus-2025-09-11": {
+    "input_cost_per_token": 4e-07,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
     "max_tokens": 32768,
     "mode": "chat",
+    "output_cost_per_reasoning_token": 4e-06,
+    "output_cost_per_token": 1.2e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1257,11 +1288,14 @@
     ]
   },
   "dashscope/qwen-plus-latest": {
+    "input_cost_per_token": 4e-07,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
     "max_tokens": 32768,
     "mode": "chat",
+    "output_cost_per_reasoning_token": 4e-06,
+    "output_cost_per_token": 1.2e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1354,11 +1388,14 @@
     "supports_tool_choice": true
   },
   "dashscope/qwen3-coder-flash": {
+    "cache_read_input_token_cost": 8e-08,
+    "input_cost_per_token": 3e-07,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 1.5e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1403,11 +1440,13 @@
     ]
   },
   "dashscope/qwen3-coder-flash-2025-07-28": {
+    "input_cost_per_token": 3e-07,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 1.5e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1448,11 +1487,14 @@
     ]
   },
   "dashscope/qwen3-coder-plus": {
+    "cache_read_input_token_cost": 1e-07,
+    "input_cost_per_token": 1e-06,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 5e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1497,11 +1539,13 @@
     ]
   },
   "dashscope/qwen3-coder-plus-2025-07-22": {
+    "input_cost_per_token": 1e-06,
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 5e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1542,11 +1586,13 @@
     ]
   },
   "dashscope/qwen3-max": {
+    "input_cost_per_token": 1.2e-06,
     "litellm_provider": "dashscope",
     "max_input_tokens": 258048,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 6e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1579,11 +1625,13 @@
     ]
   },
   "dashscope/qwen3-max-2026-01-23": {
+    "input_cost_per_token": 1.2e-06,
     "litellm_provider": "dashscope",
     "max_input_tokens": 258048,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 6e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1616,11 +1664,13 @@
     ]
   },
   "dashscope/qwen3-max-preview": {
+    "input_cost_per_token": 1.2e-06,
     "litellm_provider": "dashscope",
     "max_input_tokens": 258048,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 6e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1732,11 +1782,13 @@
     "supports_vision": true
   },
   "dashscope/qwen3-vl-plus": {
+    "input_cost_per_token": 2e-07,
     "litellm_provider": "dashscope",
     "max_input_tokens": 260096,
     "max_output_tokens": 32768,
     "max_tokens": 32768,
     "mode": "chat",
+    "output_cost_per_token": 1.6e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -1770,11 +1822,13 @@
     ]
   },
   "dashscope/qwen3.5-plus": {
+    "input_cost_per_token": 4e-07,
     "litellm_provider": "dashscope",
     "max_input_tokens": 991808,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
+    "output_cost_per_token": 2.4e-06,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
@@ -2114,47 +2168,68 @@
     "supports_tool_choice": true
   },
   "deepseek-chat": {
-    "cache_read_input_token_cost": 2.8e-08,
-    "input_cost_per_token": 2.8e-07,
+    "cache_creation_input_token_cost": 0,
+    "cache_read_input_token_cost": 2.8e-09,
+    "deprecation_date": "2026-07-24",
+    "input_cost_per_token": 1.4e-07,
+    "input_cost_per_token_cache_hit": 2.8e-09,
     "litellm_provider": "deepseek",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 8192,
-    "max_tokens": 8192,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "max_tokens": 384000,
     "mode": "chat",
-    "output_cost_per_token": 4.2e-07,
+    "multi_vendor": true,
+    "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
       "/v1/chat/completions"
+    ],
+    "supported_input_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
     ],
     "supports_function_calling": true,
     "supports_native_streaming": true,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
   "deepseek-reasoner": {
-    "cache_read_input_token_cost": 2.8e-08,
-    "input_cost_per_token": 2.8e-07,
+    "cache_creation_input_token_cost": 0,
+    "cache_read_input_token_cost": 2.8e-09,
+    "deprecation_date": "2026-07-24",
+    "input_cost_per_token": 1.4e-07,
+    "input_cost_per_token_cache_hit": 2.8e-09,
     "litellm_provider": "deepseek",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 65536,
-    "max_tokens": 65536,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "max_tokens": 384000,
     "mode": "chat",
-    "output_cost_per_token": 4.2e-07,
+    "multi_vendor": true,
+    "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
-    "supports_function_calling": false,
+    "supported_input_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
     "supports_native_streaming": true,
     "supports_parallel_function_calling": false,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
-    "supports_tool_choice": false
+    "supports_tool_choice": true
   },
   "deepseek-v3-2-251201": {
     "input_cost_per_token": 0.0,
@@ -2168,6 +2243,60 @@
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
+  "deepseek-v4-flash": {
+    "cache_creation_input_token_cost": 0,
+    "cache_read_input_token_cost": 2.8e-09,
+    "input_cost_per_token": 1.4e-07,
+    "input_cost_per_token_cache_hit": 2.8e-09,
+    "litellm_provider": "deepseek",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "max_tokens": 384000,
+    "mode": "chat",
+    "multi_vendor": true,
+    "output_cost_per_token": 2.8e-07,
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "supported_input_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true
+  },
+  "deepseek-v4-pro": {
+    "cache_creation_input_token_cost": 0,
+    "cache_read_input_token_cost": 3.625e-09,
+    "input_cost_per_token": 4.35e-07,
+    "input_cost_per_token_cache_hit": 3.625e-09,
+    "litellm_provider": "deepseek",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "max_tokens": 384000,
+    "mode": "chat",
+    "multi_vendor": true,
+    "output_cost_per_token": 8.7e-07,
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "supported_input_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
     "supports_tool_choice": true
   },
   "deepseek.v3-v1:0": {
@@ -2197,25 +2326,34 @@
     "supports_tool_choice": true
   },
   "deepseek/deepseek-chat": {
-    "cache_creation_input_token_cost": 0.0,
-    "cache_read_input_token_cost": 2.8e-08,
-    "input_cost_per_token": 2.8e-07,
-    "input_cost_per_token_cache_hit": 2.8e-08,
+    "cache_creation_input_token_cost": 0,
+    "cache_read_input_token_cost": 2.8e-09,
+    "deprecation_date": "2026-07-24",
+    "input_cost_per_token": 1.4e-07,
+    "input_cost_per_token_cache_hit": 2.8e-09,
     "litellm_provider": "deepseek",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 8192,
-    "max_tokens": 8192,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "max_tokens": 384000,
     "mode": "chat",
-    "output_cost_per_token": 4.2e-07,
+    "multi_vendor": true,
+    "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
       "/v1/chat/completions"
+    ],
+    "supported_input_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
     ],
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
     "supports_native_streaming": true,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
@@ -2250,28 +2388,37 @@
     "supports_tool_choice": true
   },
   "deepseek/deepseek-reasoner": {
-    "cache_read_input_token_cost": 2.8e-08,
-    "input_cost_per_token": 2.8e-07,
-    "input_cost_per_token_cache_hit": 2.8e-08,
+    "cache_creation_input_token_cost": 0,
+    "cache_read_input_token_cost": 2.8e-09,
+    "deprecation_date": "2026-07-24",
+    "input_cost_per_token": 1.4e-07,
+    "input_cost_per_token_cache_hit": 2.8e-09,
     "litellm_provider": "deepseek",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 65536,
-    "max_tokens": 65536,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "max_tokens": 384000,
     "mode": "chat",
-    "output_cost_per_token": 4.2e-07,
+    "multi_vendor": true,
+    "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
+    "supported_input_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
     "supports_assistant_prefill": true,
-    "supports_function_calling": false,
+    "supports_function_calling": true,
     "supports_native_streaming": true,
     "supports_parallel_function_calling": false,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
-    "supports_tool_choice": false
+    "supports_tool_choice": true
   },
   "deepseek/deepseek-v3": {
     "cache_creation_input_token_cost": 0.0,
@@ -3507,16 +3654,17 @@
     "supports_tool_choice": true
   },
   "glm-5.1": {
-    "cache_creation_input_token_cost": 1e-06,
-    "cache_read_input_token_cost": 2.8e-07,
-    "input_cost_per_token": 1.4e-06,
+    "cache_creation_input_token_cost": 0,
+    "cache_read_input_token_cost": 2.9e-07,
+    "input_cost_per_token": 1.15e-06,
     "litellm_provider": "zhipu",
-    "max_input_tokens": 81920,
-    "max_output_tokens": 81920,
-    "max_tokens": 81920,
+    "max_input_tokens": 200000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
     "mode": "chat",
     "multi_vendor": true,
-    "output_cost_per_token": 4.4e-06,
+    "output_cost_per_token": 4e-06,
+    "source": "https://open.bigmodel.cn/pricing",
     "supported_input_modalities": [
       "text"
     ],
@@ -3529,7 +3677,29 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "tiered_pricing": [
+      {
+        "cache_creation_input_token_cost": 0,
+        "cache_read_input_token_cost": 1.9e-07,
+        "input_cost_per_token": 8.6e-07,
+        "output_cost_per_token": 3.4e-06,
+        "range": [
+          0,
+          32000
+        ]
+      },
+      {
+        "cache_creation_input_token_cost": 0,
+        "cache_read_input_token_cost": 2.9e-07,
+        "input_cost_per_token": 1.15e-06,
+        "output_cost_per_token": 4e-06,
+        "range": [
+          32000,
+          200000
+        ]
+      }
+    ]
   },
   "gmi/MiniMaxAI/MiniMax-M2.1": {
     "input_cost_per_token": 3e-07,
@@ -3776,54 +3946,38 @@
     "supports_tool_choice": true
   },
   "kimi-k2.5": {
-    "cache_creation_input_token_cost": 6e-07,
     "cache_read_input_token_cost": 1e-07,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "moonshot",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
     "mode": "chat",
-    "multi_vendor": true,
-    "output_cost_per_token": 2.25e-06,
-    "supported_input_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
+    "output_cost_per_token": 3e-06,
+    "source": "https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart",
     "supports_function_calling": true,
-    "supports_native_streaming": true,
-    "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_system_messages": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true
   },
   "kimi-k2.6": {
-    "cache_creation_input_token_cost": 9.54e-07,
-    "cache_read_input_token_cost": 1.61e-07,
-    "input_cost_per_token": 9.54e-07,
+    "cache_read_input_token_cost": 1.6e-07,
+    "input_cost_per_token": 9.5e-07,
     "litellm_provider": "moonshot",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 384000,
-    "max_tokens": 384000,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
     "mode": "chat",
-    "multi_vendor": true,
-    "output_cost_per_token": 3.961e-06,
-    "supported_input_modalities": [
-      "text"
-    ],
-    "supported_output_modalities": [
-      "text"
-    ],
+    "output_cost_per_token": 4e-06,
+    "source": "https://platform.kimi.ai/docs/pricing/chat-k26",
     "supports_function_calling": true,
-    "supports_native_streaming": true,
-    "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_system_messages": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true
   },
   "lambda_ai/deepseek-llama3.3-70b": {
     "input_cost_per_token": 2e-07,
@@ -4013,12 +4167,13 @@
     "cache_read_input_token_cost": 6e-08,
     "input_cost_per_token": 3e-07,
     "litellm_provider": "minimax",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_input_tokens": 204800,
+    "max_output_tokens": 204800,
+    "max_tokens": 204800,
     "mode": "chat",
     "multi_vendor": true,
     "output_cost_per_token": 1.2e-06,
+    "source": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
     "supported_input_modalities": [
       "text"
     ],
@@ -4145,6 +4300,21 @@
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
+  "minimax/MiniMax-M3": {
+    "cache_read_input_token_cost": 1.2e-07,
+    "input_cost_per_token": 6e-07,
+    "litellm_provider": "minimax",
+    "max_input_tokens": 512000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 2.4e-06,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "minimax/speech-02-hd": {
     "input_cost_per_character": 0.0001,
     "litellm_provider": "minimax",
@@ -4191,6 +4361,7 @@
   },
   "moonshot/kimi-k2-0711-preview": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-05-25",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -4205,6 +4376,7 @@
   },
   "moonshot/kimi-k2-0905-preview": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-05-25",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "moonshot",
     "max_input_tokens": 262144,
@@ -4219,6 +4391,7 @@
   },
   "moonshot/kimi-k2-thinking": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-05-25",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "moonshot",
     "max_input_tokens": 262144,
@@ -4234,6 +4407,7 @@
   },
   "moonshot/kimi-k2-thinking-turbo": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-05-25",
     "input_cost_per_token": 1.15e-06,
     "litellm_provider": "moonshot",
     "max_input_tokens": 262144,
@@ -4249,6 +4423,7 @@
   },
   "moonshot/kimi-k2-turbo-preview": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-05-25",
     "input_cost_per_token": 1.15e-06,
     "litellm_provider": "moonshot",
     "max_input_tokens": 262144,
@@ -4273,6 +4448,7 @@
     "source": "https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart",
     "supports_function_calling": true,
     "supports_reasoning": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_video_input": true,
     "supports_vision": true
@@ -4289,12 +4465,14 @@
     "source": "https://platform.kimi.ai/docs/pricing/chat-k26",
     "supports_function_calling": true,
     "supports_reasoning": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_video_input": true,
     "supports_vision": true
   },
   "moonshot/kimi-latest": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-01-28",
     "input_cost_per_token": 2e-06,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -4309,6 +4487,7 @@
   },
   "moonshot/kimi-latest-128k": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-01-28",
     "input_cost_per_token": 2e-06,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -4323,6 +4502,7 @@
   },
   "moonshot/kimi-latest-32k": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-01-28",
     "input_cost_per_token": 1e-06,
     "litellm_provider": "moonshot",
     "max_input_tokens": 32768,
@@ -4337,6 +4517,7 @@
   },
   "moonshot/kimi-latest-8k": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2026-01-28",
     "input_cost_per_token": 2e-07,
     "litellm_provider": "moonshot",
     "max_input_tokens": 8192,
@@ -4351,6 +4532,7 @@
   },
   "moonshot/kimi-thinking-preview": {
     "cache_read_input_token_cost": 1.5e-07,
+    "deprecation_date": "2025-11-11",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -4371,9 +4553,11 @@
     "output_cost_per_token": 5e-06,
     "source": "https://platform.moonshot.ai/docs/pricing",
     "supports_function_calling": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true
   },
   "moonshot/moonshot-v1-128k-0430": {
+    "deprecation_date": "2024-04-30",
     "input_cost_per_token": 2e-06,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -4395,6 +4579,7 @@
     "output_cost_per_token": 5e-06,
     "source": "https://platform.moonshot.ai/docs/pricing",
     "supports_function_calling": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -4408,9 +4593,11 @@
     "output_cost_per_token": 3e-06,
     "source": "https://platform.moonshot.ai/docs/pricing",
     "supports_function_calling": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true
   },
   "moonshot/moonshot-v1-32k-0430": {
+    "deprecation_date": "2024-04-30",
     "input_cost_per_token": 1e-06,
     "litellm_provider": "moonshot",
     "max_input_tokens": 32768,
@@ -4432,6 +4619,7 @@
     "output_cost_per_token": 3e-06,
     "source": "https://platform.moonshot.ai/docs/pricing",
     "supports_function_calling": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -4445,9 +4633,11 @@
     "output_cost_per_token": 2e-06,
     "source": "https://platform.moonshot.ai/docs/pricing",
     "supports_function_calling": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true
   },
   "moonshot/moonshot-v1-8k-0430": {
+    "deprecation_date": "2024-04-30",
     "input_cost_per_token": 2e-07,
     "litellm_provider": "moonshot",
     "max_input_tokens": 8192,
@@ -4469,6 +4659,7 @@
     "output_cost_per_token": 2e-06,
     "source": "https://platform.moonshot.ai/docs/pricing",
     "supports_function_calling": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -4482,6 +4673,7 @@
     "output_cost_per_token": 5e-06,
     "source": "https://platform.moonshot.ai/docs/pricing",
     "supports_function_calling": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true
   },
   "moonshotai.kimi-k2.5": {
@@ -6271,12 +6463,15 @@
     "supports_tool_choice": true
   },
   "snowflake/deepseek-r1": {
+    "input_cost_per_token": 1.35e-06,
     "litellm_provider": "snowflake",
-    "max_input_tokens": 32768,
-    "max_output_tokens": 8192,
-    "max_tokens": 8192,
+    "max_input_tokens": 128000,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "mode": "chat",
-    "supports_reasoning": true
+    "output_cost_per_token": 5.4e-06,
+    "supports_reasoning": true,
+    "supports_system_messages": true
   },
   "together_ai/Qwen/Qwen2.5-72B-Instruct-Turbo": {
     "litellm_provider": "together_ai",

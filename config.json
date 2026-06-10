@@ -27,42 +27,61 @@
   "exclude_patterns": [
     "sample_spec"
   ],
-  "custom_models": {
-    "kimi-k2.6": {
-      "input_cost_per_token": 9.54e-07,
-      "output_cost_per_token": 3.961e-06,
-      "cache_creation_input_token_cost": 9.54e-07,
-      "cache_read_input_token_cost": 1.61e-07,
-      "litellm_provider": "moonshot",
-      "max_input_tokens": 1000000,
-      "max_output_tokens": 384000,
-      "max_tokens": 384000,
-      "mode": "chat",
-      "supports_prompt_caching": true,
-      "supports_reasoning": true,
-      "supports_function_calling": true,
-      "supports_tool_choice": true,
-      "supports_response_schema": true,
-      "supports_system_messages": true,
-      "supports_native_streaming": true,
-      "supported_input_modalities": [
-        "text"
-      ],
-      "supported_output_modalities": [
-        "text"
-      ],
-      "multi_vendor": true
+  "tiered_pricing_fallback": {
+    "enabled": true,
+    "strategy": "first_tier",
+    "only_when_missing": true,
+    "fields": [
+      "input_cost_per_token",
+      "output_cost_per_token",
+      "output_cost_per_reasoning_token",
+      "cache_read_input_token_cost"
+    ]
+  },
+  "aliases": {
+    "kimi-k2.5": {
+      "source": "moonshot/kimi-k2.5",
+      "description": "Mirror official Moonshot Kimi K2.5 pricing from LiteLLM upstream"
     },
+    "kimi-k2.6": {
+      "source": "moonshot/kimi-k2.6",
+      "description": "Mirror official Moonshot Kimi K2.6 pricing from LiteLLM upstream"
+    }
+  },
+  "custom_models": {
     "glm-5.1": {
-      "input_cost_per_token": 1.4e-06,
-      "output_cost_per_token": 4.4e-06,
-      "cache_creation_input_token_cost": 1e-06,
-      "cache_read_input_token_cost": 2.8e-07,
+      "input_cost_per_token": 1.15e-06,
+      "output_cost_per_token": 4e-06,
+      "cache_creation_input_token_cost": 0,
+      "cache_read_input_token_cost": 2.9e-07,
+      "tiered_pricing": [
+        {
+          "input_cost_per_token": 8.6e-07,
+          "output_cost_per_token": 3.4e-06,
+          "cache_creation_input_token_cost": 0,
+          "cache_read_input_token_cost": 1.9e-07,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "input_cost_per_token": 1.15e-06,
+          "output_cost_per_token": 4e-06,
+          "cache_creation_input_token_cost": 0,
+          "cache_read_input_token_cost": 2.9e-07,
+          "range": [
+            32000,
+            200000
+          ]
+        }
+      ],
       "litellm_provider": "zhipu",
-      "max_input_tokens": 81920,
-      "max_output_tokens": 81920,
-      "max_tokens": 81920,
+      "max_input_tokens": 200000,
+      "max_output_tokens": 128000,
+      "max_tokens": 128000,
       "mode": "chat",
+      "source": "https://open.bigmodel.cn/pricing",
       "supports_prompt_caching": true,
       "supports_reasoning": true,
       "supports_function_calling": true,
@@ -84,10 +103,11 @@
       "cache_creation_input_token_cost": 3.75e-07,
       "cache_read_input_token_cost": 6e-08,
       "litellm_provider": "minimax",
-      "max_input_tokens": 131072,
-      "max_output_tokens": 131072,
-      "max_tokens": 131072,
+      "max_input_tokens": 204800,
+      "max_output_tokens": 204800,
+      "max_tokens": 204800,
       "mode": "chat",
+      "source": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
       "supports_prompt_caching": true,
       "supports_reasoning": true,
       "supports_function_calling": true,
@@ -103,16 +123,157 @@
       ],
       "multi_vendor": true
     },
-    "kimi-k2.5": {
-      "input_cost_per_token": 6e-07,
-      "output_cost_per_token": 2.25e-06,
-      "cache_creation_input_token_cost": 6e-07,
-      "cache_read_input_token_cost": 1e-07,
-      "litellm_provider": "moonshot",
-      "max_input_tokens": 131072,
-      "max_output_tokens": 131072,
-      "max_tokens": 131072,
+    "deepseek-v4-flash": {
+      "input_cost_per_token": 1.4e-07,
+      "input_cost_per_token_cache_hit": 2.8e-09,
+      "output_cost_per_token": 2.8e-07,
+      "cache_creation_input_token_cost": 0,
+      "cache_read_input_token_cost": 2.8e-09,
+      "litellm_provider": "deepseek",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "max_tokens": 384000,
       "mode": "chat",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "supports_prompt_caching": true,
+      "supports_reasoning": true,
+      "supports_function_calling": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "supports_system_messages": true,
+      "supports_native_streaming": true,
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ],
+      "multi_vendor": true
+    },
+    "deepseek-v4-pro": {
+      "input_cost_per_token": 4.35e-07,
+      "input_cost_per_token_cache_hit": 3.625e-09,
+      "output_cost_per_token": 8.7e-07,
+      "cache_creation_input_token_cost": 0,
+      "cache_read_input_token_cost": 3.625e-09,
+      "litellm_provider": "deepseek",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "max_tokens": 384000,
+      "mode": "chat",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "supports_prompt_caching": true,
+      "supports_reasoning": true,
+      "supports_function_calling": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "supports_system_messages": true,
+      "supports_native_streaming": true,
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ],
+      "multi_vendor": true
+    },
+    "deepseek-chat": {
+      "input_cost_per_token": 1.4e-07,
+      "input_cost_per_token_cache_hit": 2.8e-09,
+      "output_cost_per_token": 2.8e-07,
+      "cache_creation_input_token_cost": 0,
+      "cache_read_input_token_cost": 2.8e-09,
+      "litellm_provider": "deepseek",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "max_tokens": 384000,
+      "mode": "chat",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "deprecation_date": "2026-07-24",
+      "supports_prompt_caching": true,
+      "supports_reasoning": true,
+      "supports_function_calling": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "supports_system_messages": true,
+      "supports_native_streaming": true,
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ],
+      "multi_vendor": true
+    },
+    "deepseek-reasoner": {
+      "input_cost_per_token": 1.4e-07,
+      "input_cost_per_token_cache_hit": 2.8e-09,
+      "output_cost_per_token": 2.8e-07,
+      "cache_creation_input_token_cost": 0,
+      "cache_read_input_token_cost": 2.8e-09,
+      "litellm_provider": "deepseek",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "max_tokens": 384000,
+      "mode": "chat",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "deprecation_date": "2026-07-24",
+      "supports_prompt_caching": true,
+      "supports_reasoning": true,
+      "supports_function_calling": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "supports_system_messages": true,
+      "supports_native_streaming": true,
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ],
+      "multi_vendor": true
+    },
+    "deepseek/deepseek-chat": {
+      "input_cost_per_token": 1.4e-07,
+      "input_cost_per_token_cache_hit": 2.8e-09,
+      "output_cost_per_token": 2.8e-07,
+      "cache_creation_input_token_cost": 0,
+      "cache_read_input_token_cost": 2.8e-09,
+      "litellm_provider": "deepseek",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "max_tokens": 384000,
+      "mode": "chat",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "deprecation_date": "2026-07-24",
+      "supports_prompt_caching": true,
+      "supports_reasoning": true,
+      "supports_function_calling": true,
+      "supports_tool_choice": true,
+      "supports_response_schema": true,
+      "supports_system_messages": true,
+      "supports_native_streaming": true,
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ],
+      "multi_vendor": true
+    },
+    "deepseek/deepseek-reasoner": {
+      "input_cost_per_token": 1.4e-07,
+      "input_cost_per_token_cache_hit": 2.8e-09,
+      "output_cost_per_token": 2.8e-07,
+      "cache_creation_input_token_cost": 0,
+      "cache_read_input_token_cost": 2.8e-09,
+      "litellm_provider": "deepseek",
+      "max_input_tokens": 1000000,
+      "max_output_tokens": 384000,
+      "max_tokens": 384000,
+      "mode": "chat",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "deprecation_date": "2026-07-24",
       "supports_prompt_caching": true,
       "supports_reasoning": true,
       "supports_function_calling": true,
