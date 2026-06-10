@@ -28,6 +28,146 @@
     "sample_spec"
   ],
   "aliases": {
+    "qwen-coder": {
+      "source": "dashscope/qwen-coder",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-flash": {
+      "source": "dashscope/qwen-flash",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-flash-2025-07-28": {
+      "source": "dashscope/qwen-flash-2025-07-28",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-image-2.0": {
+      "source": "dashscope/qwen-image-2.0",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-image-2.0-pro": {
+      "source": "dashscope/qwen-image-2.0-pro",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-max": {
+      "source": "dashscope/qwen-max",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-max-latest": {
+      "source": "dashscope/qwen-max",
+      "description": "Legacy bare DashScope alias using qwen-max pricing"
+    },
+    "qwen-plus": {
+      "source": "dashscope/qwen-plus",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-plus-2025-01-25": {
+      "source": "dashscope/qwen-plus-2025-01-25",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-plus-2025-04-28": {
+      "source": "dashscope/qwen-plus-2025-04-28",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-plus-2025-07-14": {
+      "source": "dashscope/qwen-plus-2025-07-14",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-plus-2025-07-28": {
+      "source": "dashscope/qwen-plus-2025-07-28",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-plus-2025-09-11": {
+      "source": "dashscope/qwen-plus-2025-09-11",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-plus-latest": {
+      "source": "dashscope/qwen-plus-latest",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-turbo": {
+      "source": "dashscope/qwen-turbo",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-turbo-2024-11-01": {
+      "source": "dashscope/qwen-turbo-2024-11-01",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-turbo-2025-04-28": {
+      "source": "dashscope/qwen-turbo-2025-04-28",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen-turbo-latest": {
+      "source": "dashscope/qwen-turbo-latest",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-30b-a3b": {
+      "source": "dashscope/qwen3-30b-a3b",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-coder-flash": {
+      "source": "dashscope/qwen3-coder-flash",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-coder-flash-2025-07-28": {
+      "source": "dashscope/qwen3-coder-flash-2025-07-28",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-coder-plus": {
+      "source": "dashscope/qwen3-coder-plus",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-coder-plus-2025-07-22": {
+      "source": "dashscope/qwen3-coder-plus-2025-07-22",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-max": {
+      "source": "dashscope/qwen3-max",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-max-2026-01-23": {
+      "source": "dashscope/qwen3-max-2026-01-23",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-max-preview": {
+      "source": "dashscope/qwen3-max-preview",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-next-80b-a3b-instruct": {
+      "source": "dashscope/qwen3-next-80b-a3b-instruct",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-next-80b-a3b-thinking": {
+      "source": "dashscope/qwen3-next-80b-a3b-thinking",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-vl-235b-a22b-instruct": {
+      "source": "dashscope/qwen3-vl-235b-a22b-instruct",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-vl-235b-a22b-thinking": {
+      "source": "dashscope/qwen3-vl-235b-a22b-thinking",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-vl-32b-instruct": {
+      "source": "dashscope/qwen3-vl-32b-instruct",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-vl-32b-thinking": {
+      "source": "dashscope/qwen3-vl-32b-thinking",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3-vl-plus": {
+      "source": "dashscope/qwen3-vl-plus",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3.5-plus": {
+      "source": "dashscope/qwen3.5-plus",
+      "description": "Bare DashScope model alias"
+    },
+    "qwq-plus": {
+      "source": "dashscope/qwq-plus",
+      "description": "Bare DashScope model alias"
+    },
     "kimi-k2.5": {
       "source": "moonshot/kimi-k2.5",
       "description": "Mirror official Moonshot Kimi K2.5 pricing from LiteLLM upstream"
@@ -38,6 +178,45 @@
     }
   },
   "custom_models": {
+    "qwen-long": {
+      "input_cost_per_token": 7.1e-08,
+      "output_cost_per_token": 2.9e-07,
+      "litellm_provider": "dashscope",
+      "mode": "chat",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ]
+    },
+    "qwen-long-latest": {
+      "input_cost_per_token": 7.1e-08,
+      "output_cost_per_token": 2.9e-07,
+      "litellm_provider": "dashscope",
+      "mode": "chat",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ]
+    },
+    "qwen-long-2025-01-25": {
+      "input_cost_per_token": 7.1e-08,
+      "output_cost_per_token": 2.9e-07,
+      "litellm_provider": "dashscope",
+      "mode": "chat",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "supported_input_modalities": [
+        "text"
+      ],
+      "supported_output_modalities": [
+        "text"
+      ]
+    },
     "glm-5.1": {
       "input_cost_per_token": 1.15e-06,
       "output_cost_per_token": 4e-06,
