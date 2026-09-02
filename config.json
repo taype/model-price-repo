@@ -326,13 +326,16 @@
       "multi_vendor": true
     },
     "dashscope/qwen3.8-max": {
-      "cache_creation_input_token_cost": 2.5e-06
+      "cache_creation_input_token_cost": 2.5e-06,
+      "max_input_tokens": 1000000
     },
     "qwen3.8-max": {
-      "cache_creation_input_token_cost": 2.5e-06
+      "cache_creation_input_token_cost": 2.5e-06,
+      "max_input_tokens": 1000000
     },
     "qwen3.8-max-0902": {
-      "cache_creation_input_token_cost": 2.5e-06
+      "cache_creation_input_token_cost": 2.5e-06,
+      "max_input_tokens": 1000000
     },
     "glm-5.1": {
       "input_cost_per_token": 1.15e-06,
