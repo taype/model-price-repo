@@ -164,6 +164,14 @@
       "source": "dashscope/qwen3.5-plus",
       "description": "Bare DashScope model alias"
     },
+    "qwen3.8-max": {
+      "source": "dashscope/qwen3.8-max",
+      "description": "Bare DashScope model alias"
+    },
+    "qwen3.8-max-0902": {
+      "source": "dashscope/qwen3.8-max",
+      "description": "Snapshot alias using current DashScope qwen3.8-max pricing"
+    },
     "qwq-plus": {
       "source": "dashscope/qwq-plus",
       "description": "Bare DashScope model alias"
@@ -262,6 +270,15 @@
         "text"
       ],
       "multi_vendor": true
+    },
+    "dashscope/qwen3.8-max": {
+      "cache_creation_input_token_cost": 2.5e-06
+    },
+    "qwen3.8-max": {
+      "cache_creation_input_token_cost": 2.5e-06
+    },
+    "qwen3.8-max-0902": {
+      "cache_creation_input_token_cost": 2.5e-06
     },
     "glm-5.1": {
       "input_cost_per_token": 1.15e-06,
