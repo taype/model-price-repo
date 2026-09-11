@@ -13743,6 +13743,7 @@
     "output_cost_per_token": 9.6e-07,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/OpenPipe/Qwen3-14B-Instruct": {
@@ -13771,7 +13772,8 @@
     "max_output_tokens": 262144,
     "max_tokens": 262144,
     "mode": "chat",
-    "output_cost_per_token": 1e-07
+    "output_cost_per_token": 1e-07,
+    "supports_reasoning": true
   },
   "wandb/Qwen/Qwen3-30B-A3B-Instruct-2507": {
     "input_cost_per_token": 1e-07,
@@ -13801,6 +13803,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.25e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/Qwen/Qwen3.6-27B": {
@@ -13813,6 +13816,7 @@
     "output_cost_per_token": 3.6e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/Qwen/Qwen3.6-35B-A3B": {
@@ -13823,6 +13827,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.25e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/Qwen/Qwen3.8-27B": {
@@ -13835,6 +13840,7 @@
     "output_cost_per_token": 3e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/deepseek-ai/DeepSeek-R1-0528": {
@@ -13844,7 +13850,8 @@
     "max_output_tokens": 161000,
     "max_tokens": 161000,
     "mode": "chat",
-    "output_cost_per_token": 5.4e-06
+    "output_cost_per_token": 5.4e-06,
+    "supports_reasoning": true
   },
   "wandb/deepseek-ai/DeepSeek-V3-0324": {
     "input_cost_per_token": 1.14e-06,
@@ -13863,7 +13870,8 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 1.65e-06,
-    "source": "https://wandb.ai/site/pricing/tokens/"
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true
   },
   "wandb/deepseek-ai/DeepSeek-V4-Flash": {
     "cache_read_input_token_cost": 7e-08,
@@ -13875,6 +13883,7 @@
     "output_cost_per_token": 2.8e-07,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "wandb/deepseek-ai/DeepSeek-V4-Flash-0731": {
@@ -13887,6 +13896,7 @@
     "output_cost_per_token": 2.8e-07,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "wandb/deepseek-ai/DeepSeek-V4-Pro": {
@@ -13899,7 +13909,18 @@
     "output_cost_per_token": 2.55e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
+  },
+  "wandb/deepseek-ai/DeepSeek-V4-Pro-0813": {
+    "cache_read_input_token_cost": 4.4e-08,
+    "input_cost_per_token": 1.31e-06,
+    "litellm_provider": "wandb",
+    "mode": "chat",
+    "output_cost_per_token": 3.96e-06,
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_prompt_caching": true,
+    "supports_reasoning": true
   },
   "wandb/moonshotai/Kimi-K2-Instruct": {
     "input_cost_per_token": 6e-07,
@@ -13935,6 +13956,7 @@
     "output_cost_per_token": 3.41e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/moonshotai/Kimi-K2.7-Code": {
@@ -13947,6 +13969,7 @@
     "output_cost_per_token": 3.5e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/zai-org/GLM-4.5": {
@@ -13956,7 +13979,8 @@
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "mode": "chat",
-    "output_cost_per_token": 0.2
+    "output_cost_per_token": 0.2,
+    "supports_reasoning": true
   },
   "wandb/zai-org/GLM-5.2": {
     "cache_read_input_token_cost": 1.4e-07,
@@ -13968,6 +13992,7 @@
     "output_cost_per_token": 2.42e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "zai.glm-4.7": {
