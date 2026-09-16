@@ -457,7 +457,7 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 1.32e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -473,7 +473,7 @@
     "max_tokens": 163840,
     "mode": "chat",
     "output_cost_per_token": 1.85e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -488,7 +488,7 @@
     "max_tokens": 384000,
     "mode": "chat",
     "output_cost_per_token": 3.828e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -504,7 +504,7 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 3.52e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -520,7 +520,7 @@
     "max_tokens": 131072,
     "mode": "chat",
     "output_cost_per_token": 4.84e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -535,22 +535,22 @@
     "max_tokens": 131072,
     "mode": "chat",
     "output_cost_per_token": 4.84e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
   "azure_ai/FW-GLM-5.2-Fast": {
-    "cache_read_input_token_cost": 2.1e-07,
-    "input_cost_per_token": 2.1e-06,
+    "cache_read_input_token_cost": 2.31e-07,
+    "input_cost_per_token": 2.31e-06,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "mode": "chat",
-    "output_cost_per_token": 6.6e-06,
-    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "output_cost_per_token": 7.26e-06,
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -566,7 +566,7 @@
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 3.3e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "text",
       "image"
@@ -589,7 +589,7 @@
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 4.4e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "text",
       "image"
@@ -612,7 +612,7 @@
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 4.4e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "text",
       "image"
@@ -640,7 +640,7 @@
       "high",
       "max"
     ],
-    "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-kimi-k3-through-fireworks-ai-on-microsoft-foundry/4540187",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "text",
       "image"
@@ -664,7 +664,7 @@
     "max_tokens": 1000000,
     "mode": "chat",
     "output_cost_per_token": 1.32e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -679,7 +679,7 @@
     "max_tokens": 512000,
     "mode": "chat",
     "output_cost_per_token": 1.32e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/fireworks/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "text",
       "image"
@@ -702,7 +702,7 @@
     "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 5.4e-06,
-    "source": "https://techcommunity.microsoft.com/blog/machinelearningblog/deepseek-r1-improved-performance-higher-limits-and-transparent-pricing/4386367",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
@@ -714,7 +714,7 @@
     "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 4.56e-06,
-    "source": "https://techcommunity.microsoft.com/blog/machinelearningblog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_tool_choice": true
   },
   "azure_ai/deepseek-v3-0324": {
@@ -726,7 +726,7 @@
     "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 4.56e-06,
-    "source": "https://techcommunity.microsoft.com/blog/machinelearningblog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
@@ -739,7 +739,7 @@
     "max_tokens": 131072,
     "mode": "chat",
     "output_cost_per_token": 4.94e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
@@ -752,7 +752,7 @@
     "max_tokens": 163840,
     "mode": "chat",
     "output_cost_per_token": 1.68e-06,
-    "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-deepseek-v3-2-and-deepseek-v3-2-speciale-in-microsoft-foundry/4477549",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
     "supports_prompt_caching": true,
@@ -767,7 +767,7 @@
     "max_tokens": 163840,
     "mode": "chat",
     "output_cost_per_token": 1.68e-06,
-    "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-deepseek-v3-2-and-deepseek-v3-2-speciale-in-microsoft-foundry/4477549",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
     "supports_prompt_caching": true,
@@ -784,7 +784,7 @@
     "max_tokens": 384000,
     "mode": "chat",
     "output_cost_per_token": 5.1e-07,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -800,7 +800,7 @@
     "max_tokens": 384000,
     "mode": "chat",
     "output_cost_per_token": 3.48e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -816,7 +816,7 @@
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 3e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/kimi/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_tool_choice": true,
@@ -833,7 +833,7 @@
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 4e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/kimi/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "text",
       "image"
@@ -857,7 +857,7 @@
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 4e-06,
-    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/kimi/",
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "text",
       "image"
@@ -4464,6 +4464,7 @@
   "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro": {
     "cache_read_input_token_cost": 6e-07,
     "cache_read_input_token_cost_priority": 6e-07,
+    "deprecation_date": "2026-08-27",
     "input_cost_per_token": 1.2e-06,
     "input_cost_per_token_priority": 1.2e-06,
     "litellm_provider": "fireworks_ai",
@@ -4817,6 +4818,7 @@
   "fireworks_ai/accounts/fireworks/models/minimax-m2p7": {
     "cache_read_input_token_cost": 6e-08,
     "cache_read_input_token_cost_priority": 6e-07,
+    "deprecation_date": "2026-08-27",
     "input_cost_per_token": 3e-07,
     "input_cost_per_token_priority": 1.2e-06,
     "litellm_provider": "fireworks_ai",
@@ -5718,6 +5720,7 @@
   "fireworks_ai/deepseek-v4-pro": {
     "cache_read_input_token_cost": 6e-07,
     "cache_read_input_token_cost_priority": 6e-07,
+    "deprecation_date": "2026-08-27",
     "input_cost_per_token": 1.2e-06,
     "input_cost_per_token_priority": 1.2e-06,
     "litellm_provider": "fireworks_ai",
@@ -6019,6 +6022,7 @@
   "fireworks_ai/minimax-m2p7": {
     "cache_read_input_token_cost": 6e-08,
     "cache_read_input_token_cost_priority": 6e-07,
+    "deprecation_date": "2026-08-27",
     "input_cost_per_token": 3e-07,
     "input_cost_per_token_priority": 1.2e-06,
     "litellm_provider": "fireworks_ai",
@@ -13618,6 +13622,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen2-72B-Instruct": {
+    "deprecation_date": "2025-08-28",
     "input_cost_per_token": 9e-07,
     "litellm_provider": "together_ai",
     "mode": "chat",
@@ -13625,6 +13630,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen2-VL-72B-Instruct": {
+    "deprecation_date": "2025-08-28",
     "input_cost_per_token": 1.2e-06,
     "litellm_provider": "together_ai",
     "mode": "chat",
@@ -13671,6 +13677,7 @@
     "supports_tool_choice": true
   },
   "together_ai/Qwen/Qwen2.5-Coder-32B-Instruct": {
+    "deprecation_date": "2025-11-13",
     "input_cost_per_token": 8e-07,
     "litellm_provider": "together_ai",
     "mode": "chat",
@@ -13678,6 +13685,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen2.5-VL-72B-Instruct": {
+    "deprecation_date": "2026-01-05",
     "input_cost_per_token": 1.95e-06,
     "litellm_provider": "together_ai",
     "mode": "chat",
@@ -13922,6 +13930,7 @@
     "supports_tool_choice": true
   },
   "together_ai/deepseek-ai/DeepSeek-R1-Distill-Llama-70B": {
+    "deprecation_date": "2025-12-23",
     "input_cost_per_token": 2e-06,
     "litellm_provider": "together_ai",
     "mode": "chat",
@@ -13929,6 +13938,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": {
+    "deprecation_date": "2025-08-28",
     "input_cost_per_token": 1.8e-07,
     "litellm_provider": "together_ai",
     "mode": "chat",
@@ -13936,6 +13946,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B": {
+    "deprecation_date": "2025-11-13",
     "input_cost_per_token": 1.6e-06,
     "litellm_provider": "together_ai",
     "mode": "chat",
@@ -14032,6 +14043,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/deepseek-ai/deepseek-coder-33b-instruct": {
+    "deprecation_date": "2024-08-22",
     "input_cost_per_token": 8e-07,
     "litellm_provider": "together_ai",
     "mode": "chat",
