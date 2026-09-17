@@ -627,14 +627,14 @@
     "supports_vision": true
   },
   "azure_ai/FW-Kimi-K3": {
-    "cache_read_input_token_cost": 3.3e-07,
-    "input_cost_per_token": 3.3e-06,
+    "cache_read_input_token_cost": 3e-07,
+    "input_cost_per_token": 3e-06,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "mode": "chat",
-    "output_cost_per_token": 1.65e-05,
+    "output_cost_per_token": 1.5e-05,
     "reasoning_effort_levels": [
       "low",
       "high",
@@ -4853,7 +4853,7 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": false
   },
   "fireworks_ai/accounts/fireworks/models/qwen-qwq-32b-preview": {
     "input_cost_per_token": 9e-07,
@@ -5596,7 +5596,7 @@
     "max_tokens": 1048576,
     "mode": "chat",
     "output_cost_per_token": 6.6e-06,
-    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -6080,7 +6080,7 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": false
   },
   "fireworks_ai/qwen3p7-plus": {
     "cache_read_input_token_cost": 8e-08,
@@ -14085,6 +14085,7 @@
   },
   "together_ai/deepseek-ai/DeepSeek-V4-Flash-0731": {
     "cache_read_input_token_cost": 3e-08,
+    "deprecation_date": "2026-09-29",
     "input_cost_per_token": 1.4e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 1048576,
@@ -14117,6 +14118,7 @@
   },
   "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813": {
     "cache_read_input_token_cost": 1.3e-07,
+    "deprecation_date": "2026-09-29",
     "input_cost_per_token": 1.32e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 1048576,
@@ -14138,7 +14140,7 @@
     "max_tokens": 1048576,
     "mode": "chat",
     "output_cost_per_token": 1.2e-06,
-    "source": "https://api.together.xyz/v1/models",
+    "source": "https://api.together.ai/v1/models",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_response_schema": true,
@@ -14713,6 +14715,7 @@
     "supports_tool_choice": true
   },
   "wandb/MiniMaxAI/MiniMax-M2.5": {
+    "deprecation_date": "2026-08-25",
     "input_cost_per_token": 3e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 197000,
@@ -14729,7 +14732,7 @@
     "cache_read_input_token_cost": 5e-08,
     "input_cost_per_token": 2.3e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 9.6e-07,
@@ -14739,9 +14742,10 @@
     "supports_vision": true
   },
   "wandb/OpenPipe/Qwen3-14B-Instruct": {
+    "deprecation_date": "2026-10-05",
     "input_cost_per_token": 5e-08,
     "litellm_provider": "wandb",
-    "max_input_tokens": 32768,
+    "max_input_tokens": 32800,
     "max_tokens": 32768,
     "mode": "chat",
     "output_cost_per_token": 2.2e-07,
@@ -14749,6 +14753,7 @@
     "supports_vision": false
   },
   "wandb/Qwen/Qwen3-235B-A22B-Instruct-2507": {
+    "deprecation_date": "2026-08-04",
     "input_cost_per_token": 1e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 262144,
@@ -14758,6 +14763,7 @@
     "output_cost_per_token": 1e-07
   },
   "wandb/Qwen/Qwen3-235B-A22B-Thinking-2507": {
+    "deprecation_date": "2026-08-04",
     "input_cost_per_token": 1e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 262144,
@@ -14768,9 +14774,10 @@
     "supports_reasoning": true
   },
   "wandb/Qwen/Qwen3-30B-A3B-Instruct-2507": {
+    "deprecation_date": "2026-10-05",
     "input_cost_per_token": 1e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 3e-07,
@@ -14778,6 +14785,7 @@
     "supports_vision": false
   },
   "wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+    "deprecation_date": "2026-08-25",
     "input_cost_per_token": 1e-06,
     "litellm_provider": "wandb",
     "max_input_tokens": 262144,
@@ -14788,9 +14796,10 @@
     "source": "https://wandb.ai/site/pricing/tokens/"
   },
   "wandb/Qwen/Qwen3.5-35B-A3B": {
+    "deprecation_date": "2026-10-05",
     "input_cost_per_token": 2.5e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 1.25e-06,
@@ -14800,9 +14809,10 @@
   },
   "wandb/Qwen/Qwen3.6-27B": {
     "cache_read_input_token_cost": 1.2e-07,
+    "deprecation_date": "2026-10-05",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 3.6e-06,
@@ -14814,7 +14824,7 @@
   "wandb/Qwen/Qwen3.6-35B-A3B": {
     "input_cost_per_token": 2.5e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 1.25e-06,
@@ -14826,7 +14836,7 @@
     "cache_read_input_token_cost": 1.5e-07,
     "input_cost_per_token": 4e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 3e-06,
@@ -14836,6 +14846,7 @@
     "supports_vision": true
   },
   "wandb/deepseek-ai/DeepSeek-R1-0528": {
+    "deprecation_date": "2026-03-04",
     "input_cost_per_token": 1.35e-06,
     "litellm_provider": "wandb",
     "max_input_tokens": 161000,
@@ -14846,6 +14857,7 @@
     "supports_reasoning": true
   },
   "wandb/deepseek-ai/DeepSeek-V3-0324": {
+    "deprecation_date": "2026-03-04",
     "input_cost_per_token": 1.14e-06,
     "litellm_provider": "wandb",
     "max_input_tokens": 161000,
@@ -14867,9 +14879,10 @@
   },
   "wandb/deepseek-ai/DeepSeek-V4-Flash": {
     "cache_read_input_token_cost": 7e-08,
+    "deprecation_date": "2026-10-05",
     "input_cost_per_token": 1.4e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 1048576,
+    "max_input_tokens": 1049000,
     "max_tokens": 1048576,
     "mode": "chat",
     "output_cost_per_token": 2.8e-07,
@@ -14882,7 +14895,7 @@
     "cache_read_input_token_cost": 7e-08,
     "input_cost_per_token": 1.3e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 2.8e-07,
@@ -14893,9 +14906,10 @@
   },
   "wandb/deepseek-ai/DeepSeek-V4-Pro": {
     "cache_read_input_token_cost": 2e-07,
+    "deprecation_date": "2026-10-05",
     "input_cost_per_token": 1.15e-06,
     "litellm_provider": "wandb",
-    "max_input_tokens": 1048576,
+    "max_input_tokens": 1049000,
     "max_tokens": 1048576,
     "mode": "chat",
     "output_cost_per_token": 2.55e-06,
@@ -14908,6 +14922,7 @@
     "cache_read_input_token_cost": 4.4e-08,
     "input_cost_per_token": 1.31e-06,
     "litellm_provider": "wandb",
+    "max_input_tokens": 1049000,
     "mode": "chat",
     "output_cost_per_token": 3.96e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
@@ -14915,6 +14930,7 @@
     "supports_reasoning": true
   },
   "wandb/moonshotai/Kimi-K2-Instruct": {
+    "deprecation_date": "2026-03-04",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 128000,
@@ -14942,7 +14958,7 @@
     "cache_read_input_token_cost": 1.5e-07,
     "input_cost_per_token": 6.5e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 3.41e-06,
@@ -14955,7 +14971,7 @@
     "cache_read_input_token_cost": 1.5e-07,
     "input_cost_per_token": 7.1e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 262000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 3.5e-06,
@@ -14965,6 +14981,7 @@
     "supports_vision": true
   },
   "wandb/zai-org/GLM-4.5": {
+    "deprecation_date": "2026-03-04",
     "input_cost_per_token": 0.055,
     "litellm_provider": "wandb",
     "max_input_tokens": 131072,
@@ -14978,7 +14995,7 @@
     "cache_read_input_token_cost": 1.4e-07,
     "input_cost_per_token": 7.6e-07,
     "litellm_provider": "wandb",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 1049000,
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 2.42e-06,
@@ -14986,6 +15003,20 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_vision": false
+  },
+  "wandb/zai-org/GLM-5.3-Flash": {
+    "cache_read_input_token_cost": 5e-08,
+    "input_cost_per_token": 1.5e-07,
+    "litellm_provider": "wandb",
+    "max_input_tokens": 1049000,
+    "mode": "chat",
+    "output_cost_per_token": 5e-07,
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true
   },
   "zai.glm-4.7": {
     "input_cost_per_token": 6e-07,
