@@ -1082,7 +1082,7 @@
     "max_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 6.6e-06,
-    "source": "https://www.baseten.co/library/glm-53-fast/",
+    "source": "https://inference.baseten.co/v1/models",
     "supported_modalities": [
       "text",
       "image"
@@ -5165,6 +5165,26 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro": {
+    "cache_read_input_token_cost": 6e-07,
+    "cache_read_input_token_cost_priority": 6e-07,
+    "deprecation_date": "2026-08-27",
+    "input_cost_per_token": 1.2e-06,
+    "input_cost_per_token_priority": 1.2e-06,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 1.2e-06,
+    "output_cost_per_token_priority": 1.2e-06,
+    "source": "https://api.fireworks.ai/v1/serverless/models",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": false
+  },
   "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813": {
     "cache_read_input_token_cost": 4.4e-08,
     "cache_read_input_token_cost_priority": 5.5e-08,
@@ -5495,6 +5515,21 @@
     "mode": "chat",
     "output_cost_per_token": 1.2e-06,
     "source": "https://fireworks.ai/models/fireworks/minimax-m2p1",
+    "supports_function_calling": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true
+  },
+  "fireworks_ai/accounts/fireworks/models/minimax-m2p7": {
+    "cache_read_input_token_cost_priority": 6e-07,
+    "deprecation_date": "2026-08-27",
+    "input_cost_per_token_priority": 1.2e-06,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 196608,
+    "max_output_tokens": 196608,
+    "max_tokens": 196608,
+    "mode": "chat",
+    "output_cost_per_token_priority": 1.2e-06,
+    "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_tool_choice": true
@@ -11890,6 +11925,24 @@
     "supports_vision": true,
     "supports_web_search": false
   },
+  "openrouter/qwen/qwen3.8-max-prime": {
+    "cache_read_input_token_cost": 5e-07,
+    "input_cost_per_token": 4e-06,
+    "litellm_provider": "openrouter",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 1.2e-05,
+    "source": "https://openrouter.ai/api/v1/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true
+  },
   "openrouter/qwen/qwen3.8-omni-flash": {
     "cache_read_input_token_cost": 1.6e-08,
     "input_cost_per_token": 1.5e-07,
@@ -12233,6 +12286,7 @@
   },
   "openrouter/z-ai/glm-5.3-flashx": {
     "cache_read_input_token_cost": 7.5e-08,
+    "deprecation_date": "2098-12-31",
     "input_cost_per_token": 3.7e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
