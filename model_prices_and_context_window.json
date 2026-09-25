@@ -6333,6 +6333,23 @@
     "mode": "chat",
     "output_cost_per_token": 9e-07
   },
+  "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-us": {
+    "cache_read_input_token_cost": 9e-09,
+    "input_cost_per_token": 4.5e-07,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
+    "mode": "chat",
+    "output_cost_per_token": 1.8e-06,
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "fireworks_ai/accounts/fireworks/routers/glm-5p1-fast": {
     "cache_read_input_token_cost": 5.2e-07,
     "input_cost_per_token": 2.8e-06,
@@ -6591,6 +6608,23 @@
     "output_cost_per_token": 6.6e-07,
     "output_cost_per_token_priority": 8.25e-07,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "fireworks_ai/deepseek-v4p1-flash-us": {
+    "cache_read_input_token_cost": 9e-09,
+    "input_cost_per_token": 4.5e-07,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
+    "mode": "chat",
+    "output_cost_per_token": 1.8e-06,
+    "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -15333,6 +15367,7 @@
     "supports_vision": true
   },
   "together_ai/Qwen/QwQ-32B": {
+    "deprecation_date": "2025-11-13",
     "input_cost_per_token": 1.2e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 131072,
@@ -15349,6 +15384,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen2-72B-Instruct": {
+    "deprecation_date": "2025-08-28",
     "input_cost_per_token": 9e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 32768,
@@ -15358,6 +15394,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen2-VL-72B-Instruct": {
+    "deprecation_date": "2025-08-28",
     "input_cost_per_token": 1.2e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 32768,
@@ -15381,6 +15418,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen2.5-72B-Instruct-Turbo": {
+    "deprecation_date": "2026-02-06",
     "input_cost_per_token": 1.2e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 131072,
@@ -15402,6 +15440,7 @@
     "supports_tool_choice": true
   },
   "together_ai/Qwen/Qwen2.5-Coder-32B-Instruct": {
+    "deprecation_date": "2025-11-13",
     "input_cost_per_token": 8e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 16384,
@@ -15411,6 +15450,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen2.5-VL-72B-Instruct": {
+    "deprecation_date": "2026-01-05",
     "input_cost_per_token": 1.95e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 32768,
@@ -15420,6 +15460,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": {
+    "deprecation_date": "2026-06-04",
     "input_cost_per_token": 2e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15429,6 +15470,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen3-Coder-Next-FP8": {
+    "deprecation_date": "2026-05-14",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15438,6 +15480,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen3-Next-80B-A3B-Instruct": {
+    "deprecation_date": "2026-04-02",
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15447,6 +15490,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen3-Next-80B-A3B-Thinking": {
+    "deprecation_date": "2026-02-25",
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15456,6 +15500,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen3-VL-32B-Instruct": {
+    "deprecation_date": "2026-02-25",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15465,6 +15510,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/Qwen/Qwen3-VL-8B-Instruct": {
+    "deprecation_date": "2026-04-16",
     "input_cost_per_token": 1.8e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15475,6 +15521,7 @@
   },
   "together_ai/Qwen/Qwen3.5-397B-A17B": {
     "cache_read_input_token_cost": 3.5e-07,
+    "deprecation_date": "2026-06-29",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15566,6 +15613,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/deepseek-ai/DeepSeek-R1-Distill-Llama-70B": {
+    "deprecation_date": "2025-12-23",
     "input_cost_per_token": 2e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 131072,
@@ -15575,6 +15623,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": {
+    "deprecation_date": "2025-08-28",
     "input_cost_per_token": 1.8e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 131072,
@@ -15584,6 +15633,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B": {
+    "deprecation_date": "2025-11-13",
     "input_cost_per_token": 1.6e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 131072,
@@ -15609,6 +15659,7 @@
     "supports_tool_choice": true
   },
   "together_ai/deepseek-ai/DeepSeek-V3.1": {
+    "deprecation_date": "2026-05-14",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 131072,
@@ -15664,6 +15715,7 @@
     "supports_tool_choice": true
   },
   "together_ai/deepseek-ai/deepseek-coder-33b-instruct": {
+    "deprecation_date": "2024-08-22",
     "input_cost_per_token": 8e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 16384,
@@ -15696,6 +15748,7 @@
   },
   "together_ai/moonshotai/Kimi-K2.6": {
     "cache_read_input_token_cost": 2e-07,
+    "deprecation_date": "2026-08-19",
     "input_cost_per_token": 1.2e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15706,6 +15759,7 @@
   },
   "together_ai/moonshotai/Kimi-K2.7-Code": {
     "cache_read_input_token_cost": 1.9e-07,
+    "deprecation_date": "2026-08-27",
     "input_cost_per_token": 9.5e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 262144,
@@ -15737,6 +15791,7 @@
     "supports_vision": true
   },
   "together_ai/zai-org/GLM-4.5-Air-FP8": {
+    "deprecation_date": "2026-04-02",
     "input_cost_per_token": 2e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 131072,
@@ -15762,6 +15817,7 @@
     "supports_tool_choice": true
   },
   "together_ai/zai-org/GLM-4.7": {
+    "deprecation_date": "2026-04-02",
     "input_cost_per_token": 4.5e-07,
     "litellm_provider": "together_ai",
     "max_input_tokens": 202752,
@@ -15771,6 +15827,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/zai-org/GLM-5": {
+    "deprecation_date": "2026-06-22",
     "input_cost_per_token": 1e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 202752,
@@ -15781,6 +15838,7 @@
   },
   "together_ai/zai-org/GLM-5.1": {
     "cache_read_input_token_cost": 2.6e-07,
+    "deprecation_date": "2026-07-10",
     "input_cost_per_token": 1.4e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 202752,
