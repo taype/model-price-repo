@@ -753,6 +753,13 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "azure_ai/deepseek-r1": {
+    "input_cost_per_token": 1.35e-06,
+    "litellm_provider": "azure_ai",
+    "mode": "chat",
+    "output_cost_per_token": 5.4e-06,
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
+  },
   "azure_ai/deepseek-v3": {
     "input_cost_per_token": 1.14e-06,
     "litellm_provider": "azure_ai",
@@ -763,6 +770,20 @@
     "output_cost_per_token": 4.56e-06,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supports_tool_choice": true
+  },
+  "azure_ai/deepseek-v3-0324": {
+    "input_cost_per_token": 1.14e-06,
+    "litellm_provider": "azure_ai",
+    "mode": "chat",
+    "output_cost_per_token": 4.56e-06,
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
+  },
+  "azure_ai/deepseek-v3.1": {
+    "input_cost_per_token": 1.23e-06,
+    "litellm_provider": "azure_ai",
+    "mode": "chat",
+    "output_cost_per_token": 4.94e-06,
+    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
   "azure_ai/deepseek-v3.2": {
     "input_cost_per_token": 5.8e-07,
@@ -2267,6 +2288,131 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": false
+  },
+  "bedrock_mantle/deepseek.v3.1": {
+    "input_cost_per_token": 5.8e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 8000,
+    "max_tokens": 8000,
+    "mode": "chat",
+    "output_cost_per_token": 1.68e-06,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-1.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "bedrock_mantle/moonshotai.kimi-k2-thinking": {
+    "input_cost_per_token": 6e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 16000,
+    "max_tokens": 16000,
+    "mode": "chat",
+    "output_cost_per_token": 2.5e-06,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
+  "bedrock_mantle/qwen.qwen3-235b-a22b-2507": {
+    "input_cost_per_token": 2.2e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 8000,
+    "max_tokens": 8000,
+    "mode": "chat",
+    "output_cost_per_token": 8.8e-07,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-235b-a22b-2507.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
+  "bedrock_mantle/qwen.qwen3-32b": {
+    "input_cost_per_token": 1.5e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 32000,
+    "max_output_tokens": 8000,
+    "max_tokens": 8000,
+    "mode": "chat",
+    "output_cost_per_token": 6e-07,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-32b.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
+  "bedrock_mantle/qwen.qwen3-coder-30b-a3b-instruct": {
+    "input_cost_per_token": 1.5e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 16000,
+    "max_tokens": 16000,
+    "mode": "chat",
+    "output_cost_per_token": 6e-07,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-coder-30b-a3b-instruct.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "bedrock_mantle/qwen.qwen3-coder-480b-a35b-instruct": {
+    "input_cost_per_token": 4.5e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 16000,
+    "max_tokens": 16000,
+    "mode": "chat",
+    "output_cost_per_token": 1.8e-06,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-coder-480b-a35b-instruct.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_tool_choice": true
+  },
+  "bedrock_mantle/qwen.qwen3-next-80b-a3b-instruct": {
+    "input_cost_per_token": 1.4e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 8000,
+    "max_tokens": 8000,
+    "mode": "chat",
+    "output_cost_per_token": 1.2e-06,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-next-80b-a3b.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
+  "bedrock_mantle/qwen.qwen3-vl-235b-a22b-instruct": {
+    "input_cost_per_token": 5.3e-07,
+    "litellm_provider": "bedrock_mantle",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 8000,
+    "max_tokens": 8000,
+    "mode": "chat",
+    "output_cost_per_token": 2.66e-06,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-vl-235b-a22b.html",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "cerebras/qwen-3-32b": {
     "input_cost_per_token": 4e-07,
@@ -8710,6 +8856,17 @@
     "source": "https://tokenfactory.nebius.com/models/catalog/text2text/deepseek-ai%2FDeepSeek-V4-Pro-0813",
     "supports_function_calling": true,
     "supports_reasoning": true
+  },
+  "nebius/deepseek-ai/DeepSeek-V4.1-Flash": {
+    "input_cost_per_token": 3e-07,
+    "litellm_provider": "nebius",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 1.2e-06,
+    "source": "https://tokenfactory.nebius.com/endpoints?modals=endpoint-details&model-id=deepseek-ai/DeepSeek-V4.1-Flash",
+    "supports_vision": true
   },
   "nebius/moonshotai/Kimi-K2.6": {
     "input_cost_per_token": 9.5e-07,
