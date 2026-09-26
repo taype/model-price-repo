@@ -754,6 +754,7 @@
     "supports_vision": true
   },
   "azure_ai/deepseek-r1": {
+    "deprecation_date": "2026-08-13",
     "input_cost_per_token": 1.35e-06,
     "litellm_provider": "azure_ai",
     "mode": "chat",
@@ -772,6 +773,7 @@
     "supports_tool_choice": true
   },
   "azure_ai/deepseek-v3-0324": {
+    "deprecation_date": "2026-07-13",
     "input_cost_per_token": 1.14e-06,
     "litellm_provider": "azure_ai",
     "mode": "chat",
@@ -779,6 +781,7 @@
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
   "azure_ai/deepseek-v3.1": {
+    "deprecation_date": "2026-07-13",
     "input_cost_per_token": 1.23e-06,
     "litellm_provider": "azure_ai",
     "mode": "chat",
