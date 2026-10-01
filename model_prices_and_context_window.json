@@ -10606,11 +10606,11 @@
   "openrouter/deepseek/deepseek-v3.1-terminus": {
     "cache_read_input_token_cost": 1.35e-07,
     "deprecation_date": "2026-09-28",
-    "input_cost_per_token": 2.7e-07,
+    "input_cost_per_token": 3e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 163840,
-    "max_output_tokens": 32768,
-    "max_tokens": 32768,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
     "mode": "chat",
     "output_cost_per_token": 1e-06,
     "source": "https://openrouter.ai/api/v1/models",
@@ -10671,14 +10671,14 @@
     "supports_web_search": false
   },
   "openrouter/deepseek/deepseek-v4-flash": {
-    "cache_read_input_token_cost": 2.8e-08,
-    "input_cost_per_token": 1.4e-07,
+    "cache_read_input_token_cost": 1.5708e-08,
+    "input_cost_per_token": 7.854e-08,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
     "max_output_tokens": 384000,
     "max_tokens": 384000,
     "mode": "chat",
-    "output_cost_per_token": 2.8e-07,
+    "output_cost_per_token": 1.5708e-07,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -10691,14 +10691,14 @@
     "supports_web_search": false
   },
   "openrouter/deepseek/deepseek-v4-flash-0731": {
-    "cache_read_input_token_cost": 1.6e-08,
-    "input_cost_per_token": 1.8e-08,
+    "cache_read_input_token_cost": 8.9e-09,
+    "input_cost_per_token": 8.9e-09,
     "litellm_provider": "openrouter",
-    "max_input_tokens": 1310720,
+    "max_input_tokens": 1048576,
     "max_output_tokens": 943718,
     "max_tokens": 943718,
     "mode": "chat",
-    "output_cost_per_token": 3.2e-07,
+    "output_cost_per_token": 1.28e-06,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -10732,14 +10732,14 @@
     "supports_web_search": false
   },
   "openrouter/deepseek/deepseek-v4-pro": {
-    "cache_read_input_token_cost": 7.9025e-08,
-    "input_cost_per_token": 9.483e-07,
+    "cache_read_input_token_cost": 6.525e-08,
+    "input_cost_per_token": 7.83e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
     "max_output_tokens": 384000,
     "max_tokens": 384000,
     "mode": "chat",
-    "output_cost_per_token": 1.8966e-06,
+    "output_cost_per_token": 1.566e-06,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -10752,14 +10752,58 @@
     "supports_web_search": false
   },
   "openrouter/deepseek/deepseek-v4-pro-0813": {
-    "cache_read_input_token_cost": 1.72e-07,
-    "input_cost_per_token": 2.4298e-07,
+    "cache_read_input_token_cost": 4.4e-08,
+    "input_cost_per_token": 1.32e-06,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 943718,
-    "max_tokens": 943718,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 4.2e-06,
+    "off_peak_pricing": {
+      "cache_read_input_token_cost": 2.2e-08,
+      "input_cost_per_token": 6.6e-07,
+      "output_cost_per_token": 1.98e-06,
+      "windows": [
+        {
+          "hours_utc": "00:00-00:00",
+          "weekdays": [
+            "saturday",
+            "sunday"
+          ]
+        },
+        {
+          "hours_utc": "00:00-01:00",
+          "weekdays": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ]
+        },
+        {
+          "hours_utc": "04:00-06:00",
+          "weekdays": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ]
+        },
+        {
+          "hours_utc": "10:00-00:00",
+          "weekdays": [
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+          ]
+        }
+      ]
+    },
+    "output_cost_per_token": 3.96e-06,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -10772,14 +10816,14 @@
     "supports_web_search": false
   },
   "openrouter/deepseek/deepseek-v4.1-flash": {
-    "cache_read_input_token_cost": 6e-09,
-    "input_cost_per_token": 3e-07,
+    "cache_read_input_token_cost": 2.91e-09,
+    "input_cost_per_token": 1.98e-08,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
     "max_output_tokens": 943718,
     "max_tokens": 943718,
     "mode": "chat",
-    "output_cost_per_token": 1.2e-06,
+    "output_cost_per_token": 3.96e-07,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -10933,14 +10977,14 @@
     "supports_web_search": false
   },
   "openrouter/minimax/minimax-m2.7": {
-    "cache_read_input_token_cost": 6e-08,
-    "input_cost_per_token": 3e-07,
+    "cache_read_input_token_cost": 4.2e-08,
+    "input_cost_per_token": 2.1e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 204800,
     "max_output_tokens": 176947,
     "max_tokens": 176947,
     "mode": "chat",
-    "output_cost_per_token": 1.2e-06,
+    "output_cost_per_token": 8.4e-07,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -11104,13 +11148,13 @@
   },
   "openrouter/moonshotai/kimi-k2.7-code": {
     "cache_read_input_token_cost": 1.8e-07,
-    "input_cost_per_token": 6.562e-07,
+    "input_cost_per_token": 6.712e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 262144,
     "max_output_tokens": 235929,
     "max_tokens": 235929,
     "mode": "chat",
-    "output_cost_per_token": 3.3e-06,
+    "output_cost_per_token": 3.35e-06,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -11124,14 +11168,14 @@
     "supports_web_search": false
   },
   "openrouter/moonshotai/kimi-k3": {
-    "cache_read_input_token_cost": 3e-07,
-    "input_cost_per_token": 3e-06,
+    "cache_read_input_token_cost": 2.7e-07,
+    "input_cost_per_token": 2.8e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
     "max_output_tokens": 943718,
     "max_tokens": 943718,
     "mode": "chat",
-    "output_cost_per_token": 1.5e-05,
+    "output_cost_per_token": 1e-05,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -11401,13 +11445,13 @@
     "supports_web_search": false
   },
   "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
-    "input_cost_per_token": 1e-07,
+    "input_cost_per_token": 4.815e-08,
     "litellm_provider": "openrouter",
     "max_input_tokens": 262144,
-    "max_output_tokens": 235929,
-    "max_tokens": 235929,
+    "max_output_tokens": 32000,
+    "max_tokens": 32000,
     "mode": "chat",
-    "output_cost_per_token": 3e-07,
+    "output_cost_per_token": 1.9305e-07,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -12531,14 +12575,14 @@
   },
   "openrouter/z-ai/glm-5.1": {
     "cache_creation_input_token_cost": 0.0,
-    "cache_read_input_token_cost": 2.6e-07,
-    "input_cost_per_token": 1.4e-06,
+    "cache_read_input_token_cost": 1.7914e-07,
+    "input_cost_per_token": 9.646e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 204800,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "mode": "chat",
-    "output_cost_per_token": 4.4e-06,
+    "output_cost_per_token": 3.0316e-06,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -12551,14 +12595,14 @@
     "supports_web_search": false
   },
   "openrouter/z-ai/glm-5.2": {
-    "cache_read_input_token_cost": 1.2064e-07,
-    "input_cost_per_token": 6.496e-07,
+    "cache_read_input_token_cost": 2.6e-07,
+    "input_cost_per_token": 3.249e-07,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 131072,
-    "max_tokens": 131072,
+    "max_output_tokens": 943718,
+    "max_tokens": 943718,
     "mode": "chat",
-    "output_cost_per_token": 2.0416e-06,
+    "output_cost_per_token": 3.99e-06,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -16893,12 +16937,13 @@
     "max_input_tokens": 1049000,
     "mode": "chat",
     "output_cost_per_token": 5e-07,
-    "source": "https://wandb.ai/site/pricing/tokens/",
+    "source": "https://docs.wandb.ai/inference/models.md",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "zai.glm-4.7": {
     "input_cost_per_token": 6e-07,
