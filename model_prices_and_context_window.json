@@ -8040,11 +8040,15 @@
     "supports_vision": true
   },
   "github_copilot/kimi-k3": {
+    "cache_read_input_token_cost": 3e-07,
+    "input_cost_per_token": 3e-06,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 917504,
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "mode": "chat",
+    "output_cost_per_token": 1.5e-05,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
