@@ -3918,7 +3918,8 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_tool_choice": true,
-    "supports_vision": false
+    "supports_vision": false,
+    "token_count_framing": 97
   },
   "databricks/databricks-deepseek-v4-pro-0813": {
     "cache_creation_input_token_cost": 1.31999e-06,
@@ -4064,7 +4065,8 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_framing": 100
   },
   "databricks/databricks-openjev-qwen35-4b": {
     "cache_creation_input_token_cost": 0.0,
@@ -4145,6 +4147,16 @@
     "supports_tool_choice": true,
     "supports_vision": false,
     "thinking_always_on": true
+  },
+  "databricks/system.ai.deepseek-v4-flash-0731": {
+    "litellm_provider": "databricks",
+    "mode": "chat",
+    "token_count_framing": 97
+  },
+  "databricks/system.ai.kimi-k3": {
+    "litellm_provider": "databricks",
+    "mode": "chat",
+    "token_count_framing": 100
   },
   "deepinfra/MiniMaxAI/MiniMax-M2.7": {
     "cache_read_input_token_cost": 5e-08,
@@ -8185,7 +8197,9 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_framing": 64,
+    "token_count_tokenizer": "kimi_k3"
   },
   "global.zai.glm-5.3": {
     "cache_creation_input_token_cost": 2.1e-06,
@@ -8467,7 +8481,9 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_framing": 64,
+    "token_count_tokenizer": "kimi_k3"
   },
   "inferenceapis/MiniMaxAI/MiniMax-M3": {
     "cache_read_input_token_cost": 8e-08,
@@ -9986,7 +10002,9 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_framing": 64,
+    "token_count_tokenizer": "kimi_k3"
   },
   "nebius/MiniMaxAI/MiniMax-M2.5": {
     "input_cost_per_token": 3e-07,
@@ -16306,7 +16324,9 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_framing": 64,
+    "token_count_tokenizer": "kimi_k3"
   },
   "us.zai.glm-5.3": {
     "cache_creation_input_token_cost": 2.31e-06,
