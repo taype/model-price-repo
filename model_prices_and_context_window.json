@@ -5791,6 +5791,11 @@
     "supports_tool_choice": true,
     "supports_vision": false
   },
+  "deepseek/search": {
+    "input_cost_per_query": 0.00075,
+    "litellm_provider": "deepseek",
+    "mode": "search"
+  },
   "eu.deepseek.v3.2": {
     "input_cost_per_token": 7.4e-07,
     "input_cost_per_token_flex": 3.7e-07,
@@ -6275,11 +6280,11 @@
     "output_cost_per_token": 1.2e-06,
     "output_cost_per_token_priority": 1.5e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
-    "supports_function_calling": false,
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": false,
+    "supports_tool_choice": true,
     "supports_vision": true
   },
   "fireworks_ai/accounts/fireworks/models/dolphin-2-9-2-qwen2-72b": {
@@ -6615,15 +6620,18 @@
     "supports_vision": false
   },
   "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash": {
+    "cache_read_input_token_cost": 1.5e-08,
     "cache_read_input_token_cost_priority": 2.25e-08,
+    "input_cost_per_token": 1.5e-07,
     "input_cost_per_token_priority": 2.25e-07,
     "litellm_provider": "fireworks_ai",
     "max_input_tokens": 1048576,
     "max_output_tokens": 1048576,
     "max_tokens": 1048576,
     "mode": "chat",
+    "output_cost_per_token": 6e-07,
     "output_cost_per_token_priority": 9e-07,
-    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "source": "https://platform.minimax.io/docs/guides/pricing",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
