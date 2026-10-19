@@ -77,6 +77,34 @@
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
+  "MiniMax-M3.1-Flash": {
+    "cache_read_input_token_cost": 1.5e-08,
+    "input_cost_per_token": 1.5e-07,
+    "litellm_provider": "minimax",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 512000,
+    "max_tokens": 512000,
+    "mode": "chat",
+    "multi_vendor": true,
+    "output_cost_per_token": 6e-07,
+    "source": "https://platform.minimax.io/docs/pricing/overview",
+    "supported_input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "aihubmix/cc-glm-5.1": {
     "input_cost_per_token": 6e-08,
     "litellm_provider": "aihubmix",
@@ -9661,6 +9689,34 @@
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "minimax/MiniMax-M3.1-Flash": {
+    "cache_read_input_token_cost": 1.5e-08,
+    "input_cost_per_token": 1.5e-07,
+    "litellm_provider": "minimax",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 512000,
+    "max_tokens": 512000,
+    "mode": "chat",
+    "multi_vendor": true,
+    "output_cost_per_token": 6e-07,
+    "source": "https://platform.minimax.io/docs/pricing/overview",
+    "supported_input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": true
