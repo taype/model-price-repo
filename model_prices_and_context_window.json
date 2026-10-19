@@ -984,18 +984,21 @@
     "supports_vision": true
   },
   "baseten/MiniMaxAI/MiniMax-M2.5": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 3e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 1.2e-06
   },
   "baseten/deepseek-ai/DeepSeek-V3-0324": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 7.7e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 7.7e-07
   },
   "baseten/deepseek-ai/DeepSeek-V3.1": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -1020,6 +1023,7 @@
   },
   "baseten/deepseek-ai/DeepSeek-V4-Pro": {
     "cache_read_input_token_cost": 1.45e-07,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 1.74e-06,
     "litellm_provider": "baseten",
     "max_input_tokens": 1048576,
@@ -1121,18 +1125,21 @@
     "supports_vision": true
   },
   "baseten/moonshotai/Kimi-K2-Instruct-0905": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 2.5e-06
   },
   "baseten/moonshotai/Kimi-K2-Thinking": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 2.5e-06
   },
   "baseten/moonshotai/Kimi-K2.5": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -1140,6 +1147,7 @@
   },
   "baseten/moonshotai/Kimi-K2.6": {
     "cache_read_input_token_cost": 1.6e-07,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 9.5e-07,
     "litellm_provider": "baseten",
     "max_input_tokens": 262000,
@@ -1157,6 +1165,7 @@
   },
   "baseten/moonshotai/Kimi-K2.7-Code": {
     "cache_read_input_token_cost": 1.6e-07,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 9.5e-07,
     "litellm_provider": "baseten",
     "max_input_tokens": 262000,
@@ -1190,6 +1199,7 @@
     "supports_vision": true
   },
   "baseten/zai-org/GLM-4.6": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -1197,6 +1207,7 @@
   },
   "baseten/zai-org/GLM-4.7": {
     "cache_read_input_token_cost": 1.2e-07,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "max_input_tokens": 200000,
@@ -1213,6 +1224,7 @@
     "supports_vision": false
   },
   "baseten/zai-org/GLM-5": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 9.5e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -6601,6 +6613,22 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": false
+  },
+  "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash": {
+    "cache_read_input_token_cost_priority": 2.25e-08,
+    "input_cost_per_token_priority": 2.25e-07,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token_priority": 9e-07,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "fireworks_ai/accounts/fireworks/models/qwen-qwq-32b-preview": {
     "input_cost_per_token": 9e-07,
