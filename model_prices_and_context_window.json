@@ -17400,6 +17400,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.2e-06,
     "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/MiniMaxAI/MiniMax-M3.1-Flash",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
@@ -17614,6 +17615,7 @@
     "mode": "chat",
     "output_cost_per_token": 6e-06,
     "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/Qwen/Qwen3.7-Max",
     "supports_prompt_caching": true
   },
   "together_ai/Qwen/Qwen3.8-Flash": {
@@ -17679,6 +17681,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.8e-07,
     "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_prompt_caching": true,
