@@ -6607,13 +6607,16 @@
     "mode": "search"
   },
   "empiriolabs/deepseek-v4-1-flash-1017": {
-    "input_cost_per_token": 3e-07,
+    "cache_read_input_token_cost": 2e-08,
+    "input_cost_per_token": 2e-07,
     "litellm_provider": "empiriolabs",
     "max_input_tokens": 1000000,
     "max_output_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 1.2e-06,
+    "output_cost_per_token": 8e-07,
     "source": "https://empiriolabs.ai/models/deepseek-v4-1-flash-1017",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -6627,6 +6630,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.272e-06,
     "source": "https://empiriolabs.ai/models/deepseek-v4-flash-0731",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true
@@ -6639,6 +6643,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.32e-06,
     "source": "https://empiriolabs.ai/models/deepseek-v4-flash-0731",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true
@@ -6651,6 +6656,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.3e-06,
     "source": "https://empiriolabs.ai/models/deepseek-v4-pro",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true
@@ -6663,6 +6669,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.96e-06,
     "source": "https://empiriolabs.ai/models/deepseek-v4-pro-0813",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true
@@ -6680,6 +6687,7 @@
       "search_context_size_medium": 0.02
     },
     "source": "https://empiriolabs.ai/models/deepseek-v4-pro",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -6699,6 +6707,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/deepseek-v4-pro",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -6713,6 +6722,7 @@
     "mode": "chat",
     "output_cost_per_token": 4.8e-06,
     "source": "https://empiriolabs.ai/models/deepseek-v4-pro",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true
@@ -6811,6 +6821,7 @@
       "search_context_size_medium": 0.013
     },
     "source": "https://empiriolabs.ai/models/glm-5-2",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -6830,6 +6841,7 @@
       "search_context_size_medium": 0.013
     },
     "source": "https://empiriolabs.ai/models/glm-5-2",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -6883,6 +6895,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.7131e-06,
     "source": "https://empiriolabs.ai/models/kimi-k2-6",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -6902,6 +6915,7 @@
       "search_context_size_medium": 0.015
     },
     "source": "https://empiriolabs.ai/models/kimi-k2-7-code",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -6921,6 +6935,7 @@
       "search_context_size_medium": 0.015
     },
     "source": "https://empiriolabs.ai/models/kimi-k2-7-code-highspeed",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -6941,6 +6956,7 @@
       "search_context_size_medium": 0.013
     },
     "source": "https://empiriolabs.ai/models/kimi-k2-7-code",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -6961,6 +6977,7 @@
       "search_context_size_medium": 0.015
     },
     "source": "https://empiriolabs.ai/models/kimi-k3",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7101,6 +7118,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-122b-a10b",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7122,6 +7140,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-27b",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7143,6 +7162,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-35b-a3b",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7164,6 +7184,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-397b-a17b",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7215,6 +7236,7 @@
       "search_context_size_medium": 0.015
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-flash",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7238,6 +7260,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-flash",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7258,6 +7281,7 @@
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-omni-flash",
     "supports_audio_input": true,
+    "supports_function_calling": true,
     "supports_system_messages": true,
     "supports_vision": true,
     "supports_web_search": true
@@ -7276,6 +7300,7 @@
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-omni-plus",
     "supports_audio_input": true,
+    "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_vision": true,
@@ -7283,19 +7308,20 @@
   },
   "empiriolabs/qwen3-5-plus": {
     "input_cost_per_token": 3.6e-07,
-    "input_cost_per_token_above_256k_tokens": 1.08e-06,
+    "input_cost_per_token_above_256k_tokens": 4.5e-07,
     "litellm_provider": "empiriolabs",
     "max_input_tokens": 983616,
     "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_token": 2.21e-06,
-    "output_cost_per_token_above_256k_tokens": 6.62e-06,
+    "output_cost_per_token_above_256k_tokens": 2.76e-06,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.015,
       "search_context_size_low": 0.015,
       "search_context_size_medium": 0.015
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-plus",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7319,6 +7345,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-5-plus",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7338,6 +7365,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-6-27b",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7353,6 +7381,7 @@
     "mode": "chat",
     "output_cost_per_token": 4.2e-07,
     "source": "https://empiriolabs.ai/models/qwen3-6-35b-a3b",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -7373,6 +7402,7 @@
       "search_context_size_medium": 0.02
     },
     "source": "https://empiriolabs.ai/models/qwen3-6-flash",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7394,6 +7424,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-6-flash",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7415,6 +7446,7 @@
       "search_context_size_medium": 0.026
     },
     "source": "https://empiriolabs.ai/models/qwen3-6-plus",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7436,6 +7468,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-6-plus",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7462,6 +7495,7 @@
       "search_context_size_medium": 0.03
     },
     "source": "https://empiriolabs.ai/models/qwen3-7-flash",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -7489,6 +7523,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-7-flash",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -7509,6 +7544,7 @@
       "search_context_size_medium": 0.02
     },
     "source": "https://empiriolabs.ai/models/qwen3-7-max",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7527,6 +7563,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-7-max",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7547,6 +7584,7 @@
       "search_context_size_medium": 0.03
     },
     "source": "https://empiriolabs.ai/models/qwen3-7-plus",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7570,6 +7608,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-7-plus",
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -7606,6 +7645,7 @@
       "search_context_size_medium": 0.02
     },
     "source": "https://empiriolabs.ai/models/qwen3-8-flash",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7625,6 +7665,7 @@
       "search_context_size_medium": 0.02
     },
     "source": "https://empiriolabs.ai/models/qwen3-8-max",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7644,6 +7685,7 @@
       "search_context_size_medium": 0.02
     },
     "source": "https://empiriolabs.ai/models/qwen3-8-max-0902",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7663,6 +7705,7 @@
       "search_context_size_medium": 0.01
     },
     "source": "https://empiriolabs.ai/models/qwen3-8-max",
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
@@ -7683,6 +7726,7 @@
     },
     "source": "https://empiriolabs.ai/models/qwen3-8-omni-flash",
     "supports_audio_input": true,
+    "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
