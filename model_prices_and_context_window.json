@@ -929,6 +929,12 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "azure_ai/deepseek-flash-latest": {
+    "alias_of": "azure_ai/deepseek-v4-flash"
+  },
+  "azure_ai/deepseek-pro-latest": {
+    "alias_of": "azure_ai/deepseek-v4-pro"
+  },
   "azure_ai/deepseek-r1": {
     "deprecation_date": "2026-08-13",
     "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
@@ -1050,6 +1056,12 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
+  "azure_ai/glm-flash-latest": {
+    "alias_of": "azure_ai/FW-GLM-5.3-Flash"
+  },
+  "azure_ai/glm-latest": {
+    "alias_of": "azure_ai/FW-GLM-5.3"
+  },
   "azure_ai/kimi-k2-thinking": {
     "deprecation_date": "2026-03-29",
     "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models",
@@ -1142,6 +1154,12 @@
     "supports_reasoning": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "azure_ai/kimi-latest": {
+    "alias_of": "azure_ai/FW-Kimi-K3"
+  },
+  "azure_ai/minimax-latest": {
+    "alias_of": "azure_ai/FW-MiniMax-M3"
   },
   "baseten/MiniMaxAI/MiniMax-M2.5": {
     "deprecation_date": "2026-10-16",
@@ -1276,6 +1294,21 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "baseten/deepseek-flash-latest": {
+    "alias_of": "baseten/deepseek-ai/DeepSeek-V4-Flash-0731"
+  },
+  "baseten/deepseek-pro-latest": {
+    "alias_of": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813"
+  },
+  "baseten/glm-flash-latest": {
+    "alias_of": "baseten/zai-org/GLM-5.3-Flash"
+  },
+  "baseten/glm-latest": {
+    "alias_of": "baseten/zai-org/GLM-5.3"
+  },
+  "baseten/kimi-latest": {
+    "alias_of": "baseten/moonshotai/Kimi-K3"
   },
   "baseten/moonshotai/Kimi-K2-Instruct-0905": {
     "deprecation_date": "2026-10-16",
@@ -2264,6 +2297,12 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_vision": false
+  },
+  "bedrock/glm-latest": {
+    "alias_of": "global.zai.glm-5.3"
+  },
+  "bedrock/kimi-latest": {
+    "alias_of": "global.moonshotai.kimi-k3"
   },
   "bedrock/moonshotai.kimi-k2-thinking": {
     "deprecation_date": "2027-03-30",
@@ -4037,6 +4076,9 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
+  "dashscope/qwen-flash-latest": {
+    "alias_of": "dashscope/qwen3.8-flash"
+  },
   "dashscope/qwen-image-2.0": {
     "litellm_provider": "dashscope",
     "mode": "image_generation",
@@ -4087,6 +4129,9 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
+  },
+  "dashscope/qwen-max-latest": {
+    "alias_of": "dashscope/qwen3.8-max"
   },
   "dashscope/qwen-plus": {
     "input_cost_per_token": 4e-07,
@@ -5060,6 +5105,15 @@
     "supports_tool_choice": true,
     "supports_vision": false,
     "thinking_always_on": true
+  },
+  "databricks/glm-flash-latest": {
+    "alias_of": "databricks/databricks-glm-5-3-flash"
+  },
+  "databricks/glm-latest": {
+    "alias_of": "databricks/databricks-glm-5-3"
+  },
+  "databricks/kimi-latest": {
+    "alias_of": "databricks/databricks-kimi-k3"
   },
   "databricks/system.ai.deepseek-v4-flash-0731": {
     "deprecation_date": "2026-11-05",
@@ -6358,6 +6412,12 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "deepseek/deepseek-flash-latest": {
+    "alias_of": "deepseek/deepseek-v4-flash"
+  },
+  "deepseek/deepseek-pro-latest": {
+    "alias_of": "deepseek/deepseek-v4-pro"
   },
   "deepseek/deepseek-r1": {
     "cache_read_input_token_cost": 1.4e-07,
@@ -9959,6 +10019,12 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "fireworks_ai/kimi-latest": {
+    "alias_of": "fireworks_ai/accounts/fireworks/models/kimi-k3"
+  },
+  "fireworks_ai/minimax-latest": {
+    "alias_of": "fireworks_ai/accounts/fireworks/models/minimax-m3"
+  },
   "fireworks_ai/minimax-m2p1": {
     "cache_read_input_token_cost": 3e-08,
     "input_cost_per_token": 3e-07,
@@ -10188,6 +10254,9 @@
     "supports_parallel_function_calling": true,
     "supports_response_schema": true,
     "supports_vision": true
+  },
+  "github_copilot/kimi-latest": {
+    "alias_of": "github_copilot/kimi-k3"
   },
   "glm-4-7-251222": {
     "input_cost_per_token": 0.0,
@@ -12668,6 +12737,9 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "minimax/minimax-latest": {
+    "alias_of": "minimax/MiniMax-M3"
+  },
   "minimax/speech-02-hd": {
     "input_cost_per_character": 0.0001,
     "litellm_provider": "minimax",
@@ -12993,6 +13065,9 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_vision": true
+  },
+  "moonshot/kimi-latest": {
+    "alias_of": "moonshot/kimi-k3"
   },
   "moonshot/moonshot-v1-128k": {
     "deprecation_date": "2026-08-31",
@@ -19542,13 +19617,13 @@
     "supports_reasoning": true
   },
   "together_ai/Qwen/Qwen3.7-Max": {
-    "cache_read_input_token_cost": 3e-07,
-    "input_cost_per_token": 1.5e-06,
+    "cache_read_input_token_cost": 5e-07,
+    "input_cost_per_token": 2.5e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 1000000,
     "max_output_tokens": 1000000,
     "mode": "chat",
-    "output_cost_per_token": 4.5e-06,
+    "output_cost_per_token": 7.5e-06,
     "source": "https://www.together.ai/pricing",
     "supports_prompt_caching": true
   },
@@ -19690,6 +19765,18 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "together_ai/deepseek-pro-latest": {
+    "alias_of": "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813"
+  },
+  "together_ai/glm-flash-latest": {
+    "alias_of": "together_ai/zai-org/GLM-5.3-Flash"
+  },
+  "together_ai/glm-latest": {
+    "alias_of": "together_ai/zai-org/GLM-5.3"
+  },
+  "together_ai/kimi-latest": {
+    "alias_of": "together_ai/moonshotai/Kimi-K3"
+  },
   "together_ai/moonshotai/Kimi-K2-Instruct": {
     "input_cost_per_token": 1e-06,
     "litellm_provider": "together_ai",
@@ -19774,6 +19861,9 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "together_ai/qwen-flash-latest": {
+    "alias_of": "together_ai/Qwen/Qwen3.8-Flash"
   },
   "together_ai/zai-org/GLM-4.5-Air-FP8": {
     "deprecation_date": "2026-04-02",
@@ -21260,6 +21350,12 @@
     "supports_reasoning": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "zai/glm-flash-latest": {
+    "alias_of": "zai/glm-5.3-flash"
+  },
+  "zai/glm-latest": {
+    "alias_of": "zai/glm-5.3"
   },
   "zerogpu/deepseek-v4.1-flash": {
     "cache_read_input_token_cost": 3e-09,
