@@ -12673,6 +12673,13 @@
     "mode": "chat",
     "multi_vendor": true,
     "output_cost_per_token": 6e-07,
+    "reasoning_effort_levels": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
     "source": "https://platform.minimax.io/docs/pricing/overview",
     "supported_input_modalities": [
       "text",
@@ -12683,13 +12690,16 @@
       "text"
     ],
     "supports_function_calling": true,
+    "supports_max_reasoning_effort": true,
     "supports_native_streaming": true,
+    "supports_none_reasoning_effort": false,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true
   },
   "minimax/minimax-latest": {
     "alias_of": "minimax/MiniMax-M3"
@@ -20909,13 +20919,13 @@
     "supports_vision": true
   },
   "wandb/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
-    "cache_read_input_token_cost": 2e-09,
-    "input_cost_per_token": 1.3e-07,
+    "cache_read_input_token_cost": 6e-09,
+    "input_cost_per_token": 3e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 1049000,
     "max_output_tokens": 1048576,
     "mode": "chat",
-    "output_cost_per_token": 6.5e-07,
+    "output_cost_per_token": 1.2e-06,
     "source": "https://www.coreweave.com/products/coreweave-forge/serverless-inference",
     "supports_prompt_caching": true,
     "supports_reasoning": true,
