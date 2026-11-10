@@ -7810,6 +7810,967 @@
     "supports_tool_choice": true,
     "supports_vision": false
   },
+  "fal_ai/fal-ai/glm-image": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/glm-image at $0.05 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.05,
+    "output_cost_per_pixel": 4.76837158203125e-08,
+    "source": "https://fal.ai/models/fal-ai/glm-image",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ]
+  },
+  "fal_ai/fal-ai/glm-image/image-to-image": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/glm-image/image-to-image at $0.05 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.05,
+    "output_cost_per_pixel": 4.76837158203125e-08,
+    "source": "https://fal.ai/models/fal-ai/glm-image/image-to-image",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/minimax/hailuo-02-fast/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 512p rate; tiers without a catalog field: 512p $0.017"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.017,
+    "source": "https://fal.ai/models/fal-ai/minimax/hailuo-02-fast/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/hailuo-02/pro/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "source": "https://fal.ai/models/fal-ai/minimax/hailuo-02/pro/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/hailuo-02/pro/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "source": "https://fal.ai/models/fal-ai/minimax/hailuo-02/pro/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/hailuo-02/standard/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_second": 0.045,
+    "source": "https://fal.ai/models/fal-ai/minimax/hailuo-02/standard/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/image-01/subject-reference": {
+    "litellm_provider": "fal_ai",
+    "mode": "image_generation",
+    "output_cost_per_image": 0.01,
+    "source": "https://fal.ai/models/fal-ai/minimax/image-01/subject-reference",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image at $0.02 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.02,
+    "output_cost_per_pixel": 1.9073486328125e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ]
+  },
+  "fal_ai/fal-ai/qwen-image-2512": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-2512 at $0.02 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.02,
+    "output_cost_per_pixel": 1.9073486328125e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-2512",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ]
+  },
+  "fal_ai/fal-ai/qwen-image-2512/lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-2512/lora at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-2512/lora",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ]
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509 at $0.03 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "output_cost_per_pixel": 2.86102294921875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/add-background": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/add-background at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/add-background",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/face-to-full-portrait": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/face-to-full-portrait at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/face-to-full-portrait",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/group-photo": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/group-photo at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/group-photo",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/integrate-product": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/integrate-product at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/integrate-product",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/lighting-restoration": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/lighting-restoration at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/lighting-restoration",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/multiple-angles": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/multiple-angles at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/multiple-angles",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/next-scene": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/next-scene at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/next-scene",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/remove-element": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/remove-element at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/remove-element",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/remove-lighting": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/remove-lighting at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/remove-lighting",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2509-lora-gallery/shirt-design": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2509-lora-gallery/shirt-design at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509-lora-gallery/shirt-design",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2511": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2511 at $0.03 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "output_cost_per_pixel": 2.86102294921875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2511",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2511-multiple-angles": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2511-multiple-angles at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2511-multiple-angles",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-2511/lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-2511/lora at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-2511/lora",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-lora at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-lora",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus at $0.03 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "output_cost_per_pixel": 2.86102294921875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/add-background": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/add-background at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/add-background",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/face-to-full-portrait": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/face-to-full-portrait at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/face-to-full-portrait",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/group-photo": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/group-photo at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/group-photo",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/integrate-product": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/integrate-product at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/integrate-product",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/lighting-restoration": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/lighting-restoration at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/lighting-restoration",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/multiple-angles": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/multiple-angles at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/multiple-angles",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/next-scene": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/next-scene at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/next-scene",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/remove-element": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/remove-element at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/remove-element",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/remove-lighting": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/remove-lighting at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/remove-lighting",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit-plus-lora-gallery/shirt-design": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit-plus-lora-gallery/shirt-design at $0.035 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.035,
+    "output_cost_per_pixel": 3.337860107421875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit-plus-lora-gallery/shirt-design",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit/image-to-image": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit/image-to-image at $0.03 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "output_cost_per_pixel": 2.86102294921875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit/image-to-image",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-edit/inpaint": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image-edit/inpaint at $0.03 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "output_cost_per_pixel": 2.86102294921875e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-edit/inpaint",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-layered": {
+    "litellm_provider": "fal_ai",
+    "mode": "image_generation",
+    "output_cost_per_image": 0.05,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-layered",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image-layered/lora": {
+    "litellm_provider": "fal_ai",
+    "mode": "image_generation",
+    "output_cost_per_image": 0.06,
+    "source": "https://fal.ai/models/fal-ai/qwen-image-layered/lora",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/qwen-image/image-to-image": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "notes": "fal bills fal-ai/qwen-image/image-to-image at $0.02 per megapixel, rounding each image up to the nearest megapixel. The per-pixel rate is used when Fal reports the output size, and the flat per-image price prices the default 1 MP output like the sibling flux entries"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.02,
+    "output_cost_per_pixel": 1.9073486328125e-08,
+    "source": "https://fal.ai/models/fal-ai/qwen-image/image-to-image",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/minimax/h3-max-turbo/extend-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.04,
+    "output_cost_per_second_1080p": 0.08,
+    "output_cost_per_second_2k": 0.16,
+    "output_cost_per_second_480p": 0.025,
+    "output_cost_per_second_768p": 0.04,
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/extend-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max-turbo/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.025 (480p), $0.04 (768p), $0.08 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.028,
+    "output_cost_per_second_1080p": 0.056,
+    "output_cost_per_second_480p": 0.0175,
+    "output_cost_per_second_768p": 0.028,
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max-turbo/reference-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_1080p": 0.16,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/reference-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max-turbo/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.025 (480p), $0.04 (768p), $0.08 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.028,
+    "output_cost_per_second_1080p": 0.056,
+    "output_cost_per_second_480p": 0.0175,
+    "output_cost_per_second_768p": 0.028,
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/camera-controls": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 480p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.05 (480p), $0.08 (768p), $0.16 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.035,
+    "output_cost_per_second_1080p": 0.112,
+    "output_cost_per_second_480p": 0.035,
+    "output_cost_per_second_768p": 0.056,
+    "source": "https://fal.ai/models/minimax/h3-max/camera-controls",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/extend-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_1080p": 0.16,
+    "output_cost_per_second_2k": 0.32,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "source": "https://fal.ai/models/minimax/h3-max/extend-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.05 (480p), $0.08 (768p), $0.16 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.056,
+    "output_cost_per_second_1080p": 0.112,
+    "output_cost_per_second_480p": 0.035,
+    "output_cost_per_second_768p": 0.056,
+    "source": "https://fal.ai/models/minimax/h3-max/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/insert-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.06,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.06,
+    "source": "https://fal.ai/models/minimax/h3-max/insert-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/lip-sync/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_1080p": 0.16,
+    "output_cost_per_second_2k": 0.32,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "source": "https://fal.ai/models/minimax/h3-max/lip-sync/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/recast": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 1080p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.45,
+    "output_cost_per_second_1080p": 0.45,
+    "output_cost_per_second_768p": 0.3,
+    "source": "https://fal.ai/models/minimax/h3-max/recast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/reframe-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "source": "https://fal.ai/models/minimax/h3-max/reframe-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/relight": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_1080p": 0.16,
+    "output_cost_per_second_2k": 0.32,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "source": "https://fal.ai/models/minimax/h3-max/relight",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3-max/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.05 (480p), $0.08 (768p), $0.16 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.056,
+    "output_cost_per_second_1080p": 0.112,
+    "output_cost_per_second_480p": 0.035,
+    "output_cost_per_second_768p": 0.056,
+    "source": "https://fal.ai/models/minimax/h3-max/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 2k rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.13,
+    "output_cost_per_second_2k": 0.13,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_4k": 0.16,
+    "output_cost_per_second_768p": 0.06,
+    "source": "https://fal.ai/models/minimax/h3/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3/image-to-video/lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 2k rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.1625,
+    "output_cost_per_second_2k": 0.1625,
+    "output_cost_per_second_480p": 0.0625,
+    "output_cost_per_second_4k": 0.2,
+    "output_cost_per_second_768p": 0.075,
+    "source": "https://fal.ai/models/minimax/h3/image-to-video/lora",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "fal_ai/minimax/h3/reference-to-video": {
     "litellm_provider": "fal_ai",
     "mode": "video_generation",
@@ -7830,8 +8791,34 @@
       "video"
     ]
   },
+  "fal_ai/minimax/h3/reference-to-video/lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 2k rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.1625,
+    "output_cost_per_second_2k": 0.1625,
+    "output_cost_per_second_480p": 0.0625,
+    "output_cost_per_second_4k": 0.2,
+    "output_cost_per_second_768p": 0.075,
+    "source": "https://fal.ai/models/minimax/h3/reference-to-video/lora",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "fal_ai/minimax/h3/text-to-video": {
     "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 2k rate"
+    },
     "mode": "video_generation",
     "output_cost_per_second": 0.13,
     "output_cost_per_second_2k": 0.13,
@@ -7839,6 +8826,28 @@
     "output_cost_per_second_4k": 0.16,
     "output_cost_per_second_768p": 0.06,
     "source": "https://fal.ai/models/minimax/h3/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/minimax/h3/text-to-video/lora": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 2k rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.1625,
+    "output_cost_per_second_2k": 0.1625,
+    "output_cost_per_second_480p": 0.0625,
+    "output_cost_per_second_4k": 0.2,
+    "output_cost_per_second_768p": 0.075,
+    "source": "https://fal.ai/models/minimax/h3/text-to-video/lora",
     "supported_endpoints": [
       "/v1/videos"
     ],
@@ -9242,6 +10251,26 @@
     "mode": "chat",
     "output_cost_per_token": 9e-07
   },
+  "fireworks_ai/accounts/fireworks/routers/deepseek-flash-latest": {
+    "cache_read_input_token_cost": 6e-09,
+    "cache_read_input_token_cost_priority": 7.5e-09,
+    "input_cost_per_token": 3e-07,
+    "input_cost_per_token_priority": 3.75e-07,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 393216,
+    "mode": "chat",
+    "output_cost_per_token": 1.2e-06,
+    "output_cost_per_token_priority": 1.5e-06,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot": {
     "cache_read_input_token_cost": 4.2e-09,
     "input_cost_per_token": 2.1e-07,
@@ -9437,6 +10466,80 @@
     "supports_tool_choice": true,
     "supports_vision": false
   },
+  "fireworks_ai/accounts/fireworks/routers/glm-fast-latest": {
+    "cache_read_input_token_cost": 3.9e-07,
+    "input_cost_per_token": 2.1e-06,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 6.6e-06,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": false
+  },
+  "fireworks_ai/accounts/fireworks/routers/glm-flash-latest": {
+    "cache_read_input_token_cost": 3e-08,
+    "cache_read_input_token_cost_priority": 3.75e-08,
+    "input_cost_per_token": 1.5e-07,
+    "input_cost_per_token_priority": 1.875e-07,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 5e-07,
+    "output_cost_per_token_priority": 6.25e-07,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "fireworks_ai/accounts/fireworks/routers/glm-latest": {
+    "cache_read_input_token_cost": 2.6e-07,
+    "cache_read_input_token_cost_priority": 3.25e-07,
+    "input_cost_per_token": 1.4e-06,
+    "input_cost_per_token_priority": 1.75e-06,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 4.4e-06,
+    "output_cost_per_token_priority": 5.5e-06,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": false
+  },
+  "fireworks_ai/accounts/fireworks/routers/kimi-fast-latest": {
+    "cache_read_input_token_cost": 4.5e-07,
+    "input_cost_per_token": 4.5e-06,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 2.25e-05,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
     "cache_read_input_token_cost": 3e-07,
     "deprecation_date": "2026-08-27",
@@ -9535,6 +10638,66 @@
     "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
     "supports_mid_conversation_system": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "fireworks_ai/accounts/fireworks/routers/kimi-latest": {
+    "cache_read_input_token_cost": 3e-07,
+    "cache_read_input_token_cost_priority": 3.75e-07,
+    "input_cost_per_token": 3e-06,
+    "input_cost_per_token_priority": 3.75e-06,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 1.5e-05,
+    "output_cost_per_token_priority": 1.875e-05,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "fireworks_ai/accounts/fireworks/routers/minimax-latest": {
+    "cache_read_input_token_cost": 6e-08,
+    "cache_read_input_token_cost_priority": 9e-08,
+    "input_cost_per_token": 3e-07,
+    "input_cost_per_token_priority": 4.5e-07,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 512000,
+    "max_output_tokens": 512000,
+    "mode": "chat",
+    "output_cost_per_token": 1.2e-06,
+    "output_cost_per_token_priority": 1.8e-06,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "fireworks_ai/accounts/fireworks/routers/qwen-max-latest": {
+    "cache_read_input_token_cost": 2.5e-07,
+    "cache_read_input_token_cost_priority": 3.75e-07,
+    "input_cost_per_token": 2e-06,
+    "input_cost_per_token_priority": 3e-06,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 262144,
+    "mode": "chat",
+    "output_cost_per_token": 6e-06,
+    "output_cost_per_token_priority": 9e-06,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": false,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
