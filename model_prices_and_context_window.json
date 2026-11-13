@@ -7940,6 +7940,22 @@
       "video"
     ]
   },
+  "fal_ai/fal-ai/minimax/hailuo-2.3-fast/pro/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.33,
+    "source": "https://fal.ai/models/fal-ai/minimax/hailuo-2.3-fast/pro/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "fal_ai/fal-ai/minimax/image-01": {
     "litellm_provider": "fal_ai",
     "mode": "image_generation",
@@ -7959,6 +7975,118 @@
       "/v1/images/generations"
     ],
     "supports_vision": true
+  },
+  "fal_ai/fal-ai/minimax/video-01": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.5,
+    "source": "https://fal.ai/models/fal-ai/minimax/video-01",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/video-01-director": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.5,
+    "source": "https://fal.ai/models/fal-ai/minimax/video-01-director",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/video-01-director/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.5,
+    "source": "https://fal.ai/models/fal-ai/minimax/video-01-director/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/video-01-live": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.5,
+    "source": "https://fal.ai/models/fal-ai/minimax/video-01-live",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/video-01-live/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.5,
+    "source": "https://fal.ai/models/fal-ai/minimax/video-01-live/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/video-01-subject-reference": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.5,
+    "source": "https://fal.ai/models/fal-ai/minimax/video-01-subject-reference",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/minimax/video-01/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video": 0.5,
+    "source": "https://fal.ai/models/fal-ai/minimax/video-01/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
   },
   "fal_ai/fal-ai/qwen-image": {
     "litellm_provider": "fal_ai",
@@ -9287,7 +9415,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.8e-07,
     "source": "https://docs.fireworks.ai/serverless/pricing",
-    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -10864,7 +10992,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.1e-07,
     "source": "https://api.fireworks.ai/v1/serverless/models",
-    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -10883,7 +11011,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.8e-07,
     "source": "https://docs.fireworks.ai/serverless/pricing",
-    "successor_model": "fireworks_ai/deepseek-v4-flash-0731",
+    "successor_model": "fireworks_ai/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
