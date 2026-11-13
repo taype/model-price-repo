@@ -5730,6 +5730,7 @@
     "source": "https://deepinfra.com/pricing",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": false
@@ -5745,6 +5746,7 @@
     "source": "https://deepinfra.com/pricing",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": false
@@ -5861,6 +5863,7 @@
     "source": "https://deepinfra.com/pricing",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -5970,6 +5973,23 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": false
+  },
+  "deepinfra/zai-org/GLM-5.3-Flash": {
+    "cache_read_input_token_cost": 3e-08,
+    "input_cost_per_token": 1.5e-07,
+    "litellm_provider": "deepinfra",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 5e-07,
+    "source": "https://deepinfra.com/zai-org/GLM-5.3-Flash",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true
   },
   "deepseek-chat": {
     "cache_creation_input_token_cost": 0,
@@ -7815,7 +7835,7 @@
     "input_cost_per_token_flex": 3.7e-07,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 163840,
-    "max_output_tokens": 163840,
+    "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 2.22e-06,
     "output_cost_per_token_flex": 1.11e-06,
@@ -9695,6 +9715,7 @@
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_mid_conversation_system": true,
+    "supports_prompt_caching": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -9830,6 +9851,7 @@
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_mid_conversation_system": true,
+    "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -9910,6 +9932,7 @@
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_mid_conversation_system": true,
+    "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -11264,6 +11287,7 @@
     "source": "https://api.fireworks.ai/v1/serverless/models",
     "supports_function_calling": true,
     "supports_mid_conversation_system": true,
+    "supports_prompt_caching": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
@@ -21624,7 +21648,7 @@
     "input_cost_per_token_priority": 1.085e-06,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 163840,
-    "max_output_tokens": 163840,
+    "max_output_tokens": 8000,
     "mode": "chat",
     "output_cost_per_token": 1.85e-06,
     "output_cost_per_token_batches": 9.25e-07,
