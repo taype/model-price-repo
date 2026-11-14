@@ -21329,6 +21329,7 @@
     "source": "https://api.together.ai/v1/models"
   },
   "together_ai/deepseek-ai/DeepSeek-V3": {
+    "deprecation_date": "2026-10-30",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "together_ai",
     "max_input_tokens": 65536,
@@ -21430,6 +21431,7 @@
     "alias_of": "together_ai/moonshotai/Kimi-K3"
   },
   "together_ai/moonshotai/Kimi-K2-Instruct": {
+    "deprecation_date": "2026-10-30",
     "input_cost_per_token": 1e-06,
     "litellm_provider": "together_ai",
     "metadata": {
