@@ -8928,13 +8928,13 @@
   "fal_ai/minimax/h3-max-turbo/image-to-video": {
     "litellm_provider": "fal_ai",
     "metadata": {
-      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.025 (480p), $0.04 (768p), $0.08 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; standard rate; the page's 30% promotion ran November 1 to November 15, 2026 and has ended (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.028,
-    "output_cost_per_second_1080p": 0.056,
-    "output_cost_per_second_480p": 0.0175,
-    "output_cost_per_second_768p": 0.028,
+    "output_cost_per_second": 0.04,
+    "output_cost_per_second_1080p": 0.08,
+    "output_cost_per_second_480p": 0.025,
+    "output_cost_per_second_768p": 0.04,
     "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
     "supported_endpoints": [
       "/v1/videos"
@@ -8972,13 +8972,13 @@
   "fal_ai/minimax/h3-max-turbo/text-to-video": {
     "litellm_provider": "fal_ai",
     "metadata": {
-      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.025 (480p), $0.04 (768p), $0.08 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; standard rate; the page's 30% promotion ran November 1 to November 15, 2026 and has ended (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.028,
-    "output_cost_per_second_1080p": 0.056,
-    "output_cost_per_second_480p": 0.0175,
-    "output_cost_per_second_768p": 0.028,
+    "output_cost_per_second": 0.04,
+    "output_cost_per_second_1080p": 0.08,
+    "output_cost_per_second_480p": 0.025,
+    "output_cost_per_second_768p": 0.04,
     "source": "https://fal.ai/models/minimax/h3-max-turbo/text-to-video",
     "supported_endpoints": [
       "/v1/videos"
@@ -8993,13 +8993,13 @@
   "fal_ai/minimax/h3-max/camera-controls": {
     "litellm_provider": "fal_ai",
     "metadata": {
-      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 480p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.05 (480p), $0.08 (768p), $0.16 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 480p rate; standard rate; the page's 30% promotion ran November 1 to November 15, 2026 and has ended (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.035,
-    "output_cost_per_second_1080p": 0.112,
-    "output_cost_per_second_480p": 0.035,
-    "output_cost_per_second_768p": 0.056,
+    "output_cost_per_second": 0.05,
+    "output_cost_per_second_1080p": 0.16,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
     "source": "https://fal.ai/models/minimax/h3-max/camera-controls",
     "supported_endpoints": [
       "/v1/videos"
@@ -9038,13 +9038,13 @@
   "fal_ai/minimax/h3-max/image-to-video": {
     "litellm_provider": "fal_ai",
     "metadata": {
-      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.05 (480p), $0.08 (768p), $0.16 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; standard rate; the page's 30% promotion ran November 1 to November 15, 2026 and has ended (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.056,
-    "output_cost_per_second_1080p": 0.112,
-    "output_cost_per_second_480p": 0.035,
-    "output_cost_per_second_768p": 0.056,
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_1080p": 0.16,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
     "source": "https://fal.ai/models/minimax/h3-max/image-to-video",
     "supported_endpoints": [
       "/v1/videos"
@@ -9271,13 +9271,13 @@
   "fal_ai/minimax/h3-max/text-to-video": {
     "litellm_provider": "fal_ai",
     "metadata": {
-      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; promotional 30% off rate through 2026-11-15 per the page; standard rates $0.05 (480p), $0.08 (768p), $0.16 (1080p) per second from 2026-11-16 (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 768p rate; standard rate; the page's 30% promotion ran November 1 to November 15, 2026 and has ended (ruling fal-ai-promotional-rates-apply-until-promotion-ends, 2026-11-10)"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.056,
-    "output_cost_per_second_1080p": 0.112,
-    "output_cost_per_second_480p": 0.035,
-    "output_cost_per_second_768p": 0.056,
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_1080p": 0.16,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
     "source": "https://fal.ai/models/minimax/h3-max/text-to-video",
     "supported_endpoints": [
       "/v1/videos"
@@ -21784,6 +21784,11 @@
     "max_output_tokens": 1048576,
     "mode": "chat",
     "output_cost_per_token": 1e-05,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
     "source": "https://api.together.ai/v1/models",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
