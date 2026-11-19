@@ -115,6 +115,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.5e-07,
     "source": "https://api.aiand.com/v1/models",
+    "successor_model": "aiand/deepseek-ai/deepseek-v4.1-flash-1017",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -146,6 +147,7 @@
     "mode": "chat",
     "output_cost_per_token": 6e-07,
     "source": "https://api.aiand.com/v1/models",
+    "successor_model": "aiand/deepseek-ai/deepseek-v4.1-flash-1017",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -177,6 +179,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.5e-06,
     "source": "https://api.aiand.com/v1/models",
+    "successor_model": "aiand/moonshotai/kimi-k3",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -238,6 +241,7 @@
     "mode": "chat",
     "output_cost_per_token": 4e-06,
     "source": "https://api.aiand.com/v1/models",
+    "successor_model": "aiand/zai-org/glm-5.3",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -636,6 +640,7 @@
       "max"
     ],
     "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+    "successor_model": "azure_ai/deepseek-v4.1-flash-1017",
     "supports_function_calling": true,
     "supports_pdf_input": false,
     "supports_prompt_caching": true,
@@ -652,6 +657,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.85e-06,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+    "successor_model": "azure_ai/FW-DeepSeek-V4.1-Flash",
     "supports_function_calling": true,
     "supports_pdf_input": false,
     "supports_prompt_caching": true,
@@ -807,6 +813,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.3e-06,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+    "successor_model": "azure_ai/FW-Kimi-K3",
     "supported_modalities": [
       "text",
       "image"
@@ -1069,6 +1076,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.2e-06,
     "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/deepseek-v4-1-flash-is-coming-to-microsoft-foundry/4556431",
+    "successor_model": "azure_ai/deepseek-v4.1-flash-1017",
     "supports_function_calling": true,
     "supports_pdf_input": false,
     "supports_prompt_caching": true,
@@ -1129,6 +1137,7 @@
     "mode": "chat",
     "output_cost_per_token": 3e-06,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+    "successor_model": "azure_ai/kimi-k2.6",
     "supports_function_calling": true,
     "supports_pdf_input": false,
     "supports_prompt_caching": true,
@@ -1204,14 +1213,16 @@
     "input_cost_per_token": 7.7e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
-    "output_cost_per_token": 7.7e-07
+    "output_cost_per_token": 7.7e-07,
+    "successor_model": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813"
   },
   "baseten/deepseek-ai/DeepSeek-V3.1": {
     "deprecation_date": "2026-10-16",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
-    "output_cost_per_token": 1.5e-06
+    "output_cost_per_token": 1.5e-06,
+    "successor_model": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813"
   },
   "baseten/deepseek-ai/DeepSeek-V4-Flash-0731": {
     "cache_read_input_token_cost": 2.8e-08,
@@ -1239,6 +1250,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.48e-06,
     "source": "https://inference.baseten.co/v1/models",
+    "successor_model": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -1346,21 +1358,24 @@
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
-    "output_cost_per_token": 2.5e-06
+    "output_cost_per_token": 2.5e-06,
+    "successor_model": "baseten/moonshotai/Kimi-K3.1-Pro"
   },
   "baseten/moonshotai/Kimi-K2-Thinking": {
     "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
-    "output_cost_per_token": 2.5e-06
+    "output_cost_per_token": 2.5e-06,
+    "successor_model": "baseten/moonshotai/Kimi-K3.1-Pro"
   },
   "baseten/moonshotai/Kimi-K2.5": {
     "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
-    "output_cost_per_token": 3e-06
+    "output_cost_per_token": 3e-06,
+    "successor_model": "baseten/moonshotai/Kimi-K3.1-Pro"
   },
   "baseten/moonshotai/Kimi-K2.6": {
     "cache_read_input_token_cost": 1.6e-07,
@@ -1372,6 +1387,7 @@
     "mode": "chat",
     "output_cost_per_token": 4e-06,
     "source": "https://inference.baseten.co/v1/models",
+    "successor_model": "baseten/moonshotai/Kimi-K3.1-Pro",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -1389,6 +1405,7 @@
     "mode": "chat",
     "output_cost_per_token": 4e-06,
     "source": "https://inference.baseten.co/v1/models",
+    "successor_model": "baseten/moonshotai/Kimi-K3.1-Pro",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -1433,7 +1450,8 @@
     "input_cost_per_token": 6e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
-    "output_cost_per_token": 2.2e-06
+    "output_cost_per_token": 2.2e-06,
+    "successor_model": "baseten/zai-org/GLM-5.3"
   },
   "baseten/zai-org/GLM-4.7": {
     "cache_read_input_token_cost": 1.2e-07,
@@ -1445,6 +1463,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.2e-06,
     "source": "https://inference.baseten.co/v1/models",
+    "successor_model": "baseten/zai-org/GLM-5.3",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": false,
@@ -1457,7 +1476,8 @@
     "input_cost_per_token": 9.5e-07,
     "litellm_provider": "baseten",
     "mode": "chat",
-    "output_cost_per_token": 3.15e-06
+    "output_cost_per_token": 3.15e-06,
+    "successor_model": "baseten/zai-org/GLM-5.3"
   },
   "baseten/zai-org/GLM-5.2": {
     "cache_read_input_token_cost": 1.4e-07,
@@ -1627,6 +1647,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/ap-northeast-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -1688,6 +1709,7 @@
     "output_cost_per_token": 3.03e-06,
     "output_cost_per_token_flex": 1.52e-06,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+    "successor_model": "bedrock/ap-northeast-1/moonshotai.kimi-k2.5",
     "supports_function_calling": true,
     "supports_reasoning": true
   },
@@ -1952,6 +1974,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/ap-south-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -2013,6 +2036,7 @@
     "output_cost_per_token": 2.94e-06,
     "output_cost_per_token_flex": 1.47e-06,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+    "successor_model": "bedrock/ap-south-1/moonshotai.kimi-k2.5",
     "supports_function_calling": true,
     "supports_reasoning": true
   },
@@ -2434,6 +2458,7 @@
     "output_cost_per_token": 1.44e-06,
     "output_cost_per_token_flex": 7.2e-07,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-minimax-minimax-m2-1.html",
+    "successor_model": "bedrock/ap-southeast-3/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -2642,6 +2667,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/eu-central-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -2845,6 +2871,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/eu-north-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -3033,6 +3060,7 @@
     "output_cost_per_token": 1.44e-06,
     "output_cost_per_token_flex": 7.2e-07,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-minimax-minimax-m2-1.html",
+    "successor_model": "bedrock/eu-south-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -3268,6 +3296,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/eu-west-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -3464,6 +3493,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.606853e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-west-2/index.json",
+    "successor_model": "bedrock/eu-west-2/deepseek.v3.2",
     "supports_function_calling": true,
     "supports_native_structured_output": true,
     "supports_reasoning": true,
@@ -3526,6 +3556,7 @@
     "output_cost_per_token_flex": 9.3e-07,
     "output_cost_per_token_priority": 3.255e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/eu-west-2/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -3764,6 +3795,7 @@
     "output_cost_per_token": 2.5e-06,
     "output_cost_per_token_flex": 1.25e-06,
     "source": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/bedrock/USD/current/bedrock.json",
+    "successor_model": "bedrock/moonshotai.kimi-k2.5",
     "supports_function_calling": true,
     "supports_reasoning": true
   },
@@ -3847,6 +3879,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/sa-east-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -3908,6 +3941,7 @@
     "output_cost_per_token": 3.03e-06,
     "output_cost_per_token_flex": 1.52e-06,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+    "successor_model": "bedrock/sa-east-1/moonshotai.kimi-k2.5",
     "supports_function_calling": true,
     "supports_reasoning": true
   },
@@ -4106,6 +4140,7 @@
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.1e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/us-east-1/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -4146,6 +4181,7 @@
     "output_cost_per_token": 2.5e-06,
     "output_cost_per_token_flex": 1.25e-06,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+    "successor_model": "bedrock/us-east-1/moonshotai.kimi-k2.5",
     "supports_function_calling": true,
     "supports_reasoning": true
   },
@@ -4252,6 +4288,7 @@
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.1e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/us-east-2/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -4293,6 +4330,7 @@
     "output_cost_per_token": 2.5e-06,
     "output_cost_per_token_flex": 1.25e-06,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+    "successor_model": "bedrock/us-east-2/moonshotai.kimi-k2.5",
     "supports_function_calling": true,
     "supports_reasoning": true
   },
@@ -4440,6 +4478,7 @@
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.1e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
+    "successor_model": "bedrock/us-west-2/minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -4480,6 +4519,7 @@
     "output_cost_per_token": 2.5e-06,
     "output_cost_per_token_flex": 1.25e-06,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+    "successor_model": "bedrock/us-west-2/moonshotai.kimi-k2.5",
     "supports_function_calling": true,
     "supports_reasoning": true
   },
@@ -4558,6 +4598,7 @@
     "output_cost_per_token_flex": 1.016206e-06,
     "output_cost_per_token_priority": 3.556719e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-northeast-1/index.json",
+    "successor_model": "bedrock_mantle/ap-northeast-1/deepseek.v3.2",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -4601,6 +4642,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.54e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-northeast-1/index.json",
+    "successor_model": "bedrock_mantle/ap-northeast-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -4625,6 +4667,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-northeast-1/index.json",
+    "successor_model": "bedrock_mantle/ap-northeast-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -4671,6 +4714,7 @@
     "output_cost_per_token_flex": 1.52e-06,
     "output_cost_per_token_priority": 5.3e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-northeast-1/index.json",
+    "successor_model": "bedrock_mantle/ap-northeast-1/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -4927,6 +4971,7 @@
     "output_cost_per_token_flex": 9.88339e-07,
     "output_cost_per_token_priority": 3.459187e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-south-1/index.json",
+    "successor_model": "bedrock_mantle/ap-south-1/deepseek.v3.2",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -4970,6 +5015,7 @@
     "output_cost_per_token_flex": 7.1e-07,
     "output_cost_per_token_priority": 2.47e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-south-1/index.json",
+    "successor_model": "bedrock_mantle/ap-south-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -4994,6 +5040,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-south-1/index.json",
+    "successor_model": "bedrock_mantle/ap-south-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5040,6 +5087,7 @@
     "output_cost_per_token_flex": 1.47e-06,
     "output_cost_per_token_priority": 5.15e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-south-1/index.json",
+    "successor_model": "bedrock_mantle/ap-south-1/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5296,6 +5344,7 @@
     "output_cost_per_token_flex": 8.652e-07,
     "output_cost_per_token_priority": 3.0282e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-2/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-2/deepseek.v3.2",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5339,6 +5388,7 @@
     "output_cost_per_token_flex": 6.18e-07,
     "output_cost_per_token_priority": 2.163e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-2/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-2/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5363,6 +5413,7 @@
     "output_cost_per_token_flex": 6.2e-07,
     "output_cost_per_token_priority": 2.17e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-2/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-2/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5409,6 +5460,7 @@
     "output_cost_per_token_flex": 1.2875e-06,
     "output_cost_per_token_priority": 4.50625e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-2/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-2/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5665,6 +5717,7 @@
     "output_cost_per_token_flex": 8.7e-07,
     "output_cost_per_token_priority": 3.045e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-3/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-3/deepseek.v3.2",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5708,6 +5761,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-3/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-3/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5732,6 +5786,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-3/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-3/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -5778,6 +5833,7 @@
     "output_cost_per_token_flex": 1.5e-06,
     "output_cost_per_token_priority": 5.25e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/ap-southeast-3/index.json",
+    "successor_model": "bedrock_mantle/ap-southeast-3/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6036,6 +6092,7 @@
     "output_cost_per_token_flex": 8.4e-07,
     "output_cost_per_token_priority": 2.94e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "successor_model": "bedrock_mantle/deepseek.v3.2",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6081,6 +6138,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-central-1/index.json",
+    "successor_model": "bedrock_mantle/eu-central-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6105,6 +6163,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-central-1/index.json",
+    "successor_model": "bedrock_mantle/eu-central-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6317,6 +6376,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-north-1/index.json",
+    "successor_model": "bedrock_mantle/eu-north-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6341,6 +6401,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-north-1/index.json",
+    "successor_model": "bedrock_mantle/eu-north-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6387,6 +6448,7 @@
     "output_cost_per_token_flex": 1.5e-06,
     "output_cost_per_token_priority": 5.25e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-north-1/index.json",
+    "successor_model": "bedrock_mantle/eu-north-1/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6565,6 +6627,7 @@
     "output_cost_per_token_flex": 7.1e-07,
     "output_cost_per_token_priority": 2.47e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-south-1/index.json",
+    "successor_model": "bedrock_mantle/eu-south-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6589,6 +6652,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-south-1/index.json",
+    "successor_model": "bedrock_mantle/eu-south-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6778,6 +6842,7 @@
     "output_cost_per_token_flex": 7.1e-07,
     "output_cost_per_token_priority": 2.47e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-west-1/index.json",
+    "successor_model": "bedrock_mantle/eu-west-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6802,6 +6867,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-west-1/index.json",
+    "successor_model": "bedrock_mantle/eu-west-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -6991,6 +7057,7 @@
     "output_cost_per_token_flex": 1.303427e-06,
     "output_cost_per_token_priority": 4.561993e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-west-2/index.json",
+    "successor_model": "bedrock_mantle/eu-west-2/deepseek.v3.2",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7034,6 +7101,7 @@
     "output_cost_per_token_flex": 9.3e-07,
     "output_cost_per_token_priority": 3.26e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-west-2/index.json",
+    "successor_model": "bedrock_mantle/eu-west-2/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7058,6 +7126,7 @@
     "output_cost_per_token_flex": 9.3e-07,
     "output_cost_per_token_priority": 3.255e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-west-2/index.json",
+    "successor_model": "bedrock_mantle/eu-west-2/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7104,6 +7173,7 @@
     "output_cost_per_token_flex": 1.9375e-06,
     "output_cost_per_token_priority": 6.78125e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/eu-west-2/index.json",
+    "successor_model": "bedrock_mantle/eu-west-2/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7362,6 +7432,7 @@
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.1e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "successor_model": "bedrock_mantle/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7388,6 +7459,7 @@
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.1e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "successor_model": "bedrock_mantle/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7438,6 +7510,7 @@
     "output_cost_per_token_flex": 1.25e-06,
     "output_cost_per_token_priority": 4.38e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "successor_model": "bedrock_mantle/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7635,6 +7708,7 @@
     "output_cost_per_token_flex": 1.008e-06,
     "output_cost_per_token_priority": 3.528e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/sa-east-1/index.json",
+    "successor_model": "bedrock_mantle/sa-east-1/deepseek.v3.2",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7678,6 +7752,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.54e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/sa-east-1/index.json",
+    "successor_model": "bedrock_mantle/sa-east-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7702,6 +7777,7 @@
     "output_cost_per_token_flex": 7.2e-07,
     "output_cost_per_token_priority": 2.52e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/sa-east-1/index.json",
+    "successor_model": "bedrock_mantle/sa-east-1/minimax.minimax-m2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -7748,6 +7824,7 @@
     "output_cost_per_token_flex": 1.52e-06,
     "output_cost_per_token_priority": 5.3e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/20261111013037/sa-east-1/index.json",
+    "successor_model": "bedrock_mantle/sa-east-1/moonshotai.kimi-k2.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -8149,6 +8226,7 @@
   },
   "cerebras/qwen-3-32b": {
     "deprecation_date": "2026-02-16",
+    "deprecation_source": "https://inference-docs.cerebras.ai/support/deprecation",
     "input_cost_per_token": 4e-07,
     "litellm_provider": "cerebras",
     "max_input_tokens": 128000,
@@ -8156,6 +8234,7 @@
     "mode": "chat",
     "output_cost_per_token": 8e-07,
     "source": "https://inference-docs.cerebras.ai/support/pricing",
+    "successor_model": "cerebras/gpt-oss-120b",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
@@ -10959,6 +11038,7 @@
     "multi_vendor": true,
     "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "successor_model": "deepseek-v4-flash",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -11028,7 +11108,8 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "deepseek-reasoner": {
     "cache_creation_input_token_cost": 0,
@@ -11045,6 +11126,7 @@
     "multi_vendor": true,
     "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "successor_model": "deepseek-v4-flash",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -11135,7 +11217,8 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "deepseek-v4-flash-vision-exp": {
     "cache_creation_input_token_cost": 0.0,
@@ -11188,7 +11271,8 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "deepseek-v4-pro": {
     "cache_creation_input_token_cost": 0,
@@ -11249,7 +11333,8 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": false
+    "supports_vision": false,
+    "supports_web_search": true
   },
   "deepseek.r1-v1:0": {
     "deprecation_date": "2027-03-30",
@@ -11275,6 +11360,7 @@
     "mode": "chat",
     "output_cost_per_token": 1.68e-06,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-1.html",
+    "successor_model": "deepseek.v3.2",
     "supports_function_calling": true,
     "supports_native_structured_output": true,
     "supports_reasoning": true,
@@ -11317,6 +11403,7 @@
     "multi_vendor": true,
     "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "successor_model": "deepseek/deepseek-v4-flash",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -11401,7 +11488,8 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "deepseek/deepseek-flash-latest": {
     "alias_of": "deepseek/deepseek-v4-flash"
@@ -11439,6 +11527,7 @@
     "multi_vendor": true,
     "output_cost_per_token": 2.8e-07,
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "successor_model": "deepseek/deepseek-v4-flash",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -11540,6 +11629,7 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": true,
+    "supports_web_search": true,
     "token_count_framing": 23,
     "token_count_tool_framing": 12
   },
@@ -11594,7 +11684,8 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "deepseek/deepseek-v4-pro": {
     "cache_creation_input_token_cost": 0.0,
@@ -11648,6 +11739,7 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": false,
+    "supports_web_search": true,
     "token_count_framing": 76,
     "token_count_tool_framing": 75
   },
@@ -14399,6 +14491,7 @@
     "cache_read_input_token_cost": 7e-09,
     "cache_read_input_token_cost_priority": 8.75e-09,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 2.2e-07,
     "input_cost_per_token_priority": 2.75e-07,
     "litellm_provider": "fireworks_ai",
@@ -14408,6 +14501,7 @@
     "output_cost_per_token": 6.6e-07,
     "output_cost_per_token_priority": 8.25e-07,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -14418,6 +14512,7 @@
     "cache_read_input_token_cost": 7e-09,
     "cache_read_input_token_cost_priority": 8.75e-09,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 2.2e-07,
     "input_cost_per_token_priority": 2.75e-07,
     "litellm_provider": "fireworks_ai",
@@ -14427,6 +14522,7 @@
     "output_cost_per_token": 6.6e-07,
     "output_cost_per_token_priority": 8.25e-07,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -14436,6 +14532,7 @@
     "cache_read_input_token_cost": 6e-07,
     "cache_read_input_token_cost_priority": 6e-07,
     "deprecation_date": "2026-08-27",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 1.2e-06,
     "input_cost_per_token_priority": 1.2e-06,
     "litellm_provider": "fireworks_ai",
@@ -14445,6 +14542,7 @@
     "output_cost_per_token": 1.2e-06,
     "output_cost_per_token_priority": 1.2e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -14455,6 +14553,7 @@
     "cache_read_input_token_cost": 4.4e-08,
     "cache_read_input_token_cost_priority": 5.5e-08,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 1.32e-06,
     "input_cost_per_token_priority": 1.65e-06,
     "litellm_provider": "fireworks_ai",
@@ -14464,6 +14563,7 @@
     "output_cost_per_token": 3.96e-06,
     "output_cost_per_token_priority": 4.95e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -14619,6 +14719,7 @@
     "cache_read_input_token_cost": 1.4e-07,
     "cache_read_input_token_cost_priority": 1.75e-07,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 1.4e-06,
     "input_cost_per_token_priority": 1.75e-06,
     "litellm_provider": "fireworks_ai",
@@ -14727,6 +14828,7 @@
     "cache_read_input_token_cost": 1.6e-07,
     "cache_read_input_token_cost_priority": 2.2e-07,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 9.5e-07,
     "input_cost_per_token_priority": 1.5e-06,
     "litellm_provider": "fireworks_ai",
@@ -14736,6 +14838,7 @@
     "output_cost_per_token": 4e-06,
     "output_cost_per_token_priority": 6e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/kimi-k3",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -14746,6 +14849,7 @@
     "cache_read_input_token_cost": 1.9e-07,
     "cache_read_input_token_cost_priority": 2.85e-07,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 9.5e-07,
     "input_cost_per_token_priority": 1.425e-06,
     "litellm_provider": "fireworks_ai",
@@ -14755,6 +14859,7 @@
     "output_cost_per_token": 4e-06,
     "output_cost_per_token_priority": 6e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/kimi-k3",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -14842,6 +14947,7 @@
   "fireworks_ai/accounts/fireworks/models/minimax-m2p7": {
     "cache_read_input_token_cost_priority": 6e-07,
     "deprecation_date": "2026-08-27",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token_priority": 1.2e-06,
     "litellm_provider": "fireworks_ai",
     "max_input_tokens": 196608,
@@ -14849,6 +14955,7 @@
     "mode": "chat",
     "output_cost_per_token_priority": 1.2e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/accounts/fireworks/models/minimax-m3",
     "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_tool_choice": true
@@ -15898,16 +16005,16 @@
     "supports_vision": true
   },
   "fireworks_ai/accounts/fireworks/routers/kimi-latest": {
-    "cache_read_input_token_cost": 3e-07,
-    "cache_read_input_token_cost_priority": 3.75e-07,
-    "input_cost_per_token": 3e-06,
-    "input_cost_per_token_priority": 3.75e-06,
+    "cache_read_input_token_cost": 2e-07,
+    "cache_read_input_token_cost_priority": 3e-07,
+    "input_cost_per_token": 2e-06,
+    "input_cost_per_token_priority": 3e-06,
     "litellm_provider": "fireworks_ai",
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
     "mode": "chat",
-    "output_cost_per_token": 1.5e-05,
-    "output_cost_per_token_priority": 1.875e-05,
+    "output_cost_per_token": 1e-05,
+    "output_cost_per_token_priority": 1.5e-05,
     "reasoning_effort_levels": [
       "low",
       "high",
@@ -15916,6 +16023,7 @@
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_mid_conversation_system": true,
+    "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -15998,6 +16106,7 @@
     "cache_read_input_token_cost": 7e-09,
     "cache_read_input_token_cost_priority": 8.75e-09,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 2.2e-07,
     "input_cost_per_token_priority": 2.75e-07,
     "litellm_provider": "fireworks_ai",
@@ -16007,6 +16116,7 @@
     "output_cost_per_token": 6.6e-07,
     "output_cost_per_token_priority": 8.25e-07,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -16017,6 +16127,7 @@
     "cache_read_input_token_cost": 7e-09,
     "cache_read_input_token_cost_priority": 8.75e-09,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 2.2e-07,
     "input_cost_per_token_priority": 2.75e-07,
     "litellm_provider": "fireworks_ai",
@@ -16026,6 +16137,7 @@
     "output_cost_per_token": 6.6e-07,
     "output_cost_per_token_priority": 8.25e-07,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
@@ -16035,6 +16147,7 @@
     "cache_read_input_token_cost": 4.4e-08,
     "cache_read_input_token_cost_priority": 5.5e-08,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 1.32e-06,
     "input_cost_per_token_priority": 1.65e-06,
     "litellm_provider": "fireworks_ai",
@@ -16044,6 +16157,7 @@
     "output_cost_per_token": 3.96e-06,
     "output_cost_per_token_priority": 4.95e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/deepseek-v4p1-flash",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -16139,6 +16253,7 @@
     "cache_read_input_token_cost": 1.4e-07,
     "cache_read_input_token_cost_priority": 1.75e-07,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 1.4e-06,
     "input_cost_per_token_priority": 1.75e-06,
     "litellm_provider": "fireworks_ai",
@@ -16302,6 +16417,7 @@
     "cache_read_input_token_cost": 1.6e-07,
     "cache_read_input_token_cost_priority": 2.2e-07,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 9.5e-07,
     "input_cost_per_token_priority": 1.5e-06,
     "litellm_provider": "fireworks_ai",
@@ -16311,6 +16427,7 @@
     "output_cost_per_token": 4e-06,
     "output_cost_per_token_priority": 6e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/kimi-k3",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -16339,6 +16456,7 @@
     "cache_read_input_token_cost": 1.9e-07,
     "cache_read_input_token_cost_priority": 2.85e-07,
     "deprecation_date": "2026-09-25",
+    "deprecation_source": "https://docs.fireworks.ai/updates/changelog",
     "input_cost_per_token": 9.5e-07,
     "input_cost_per_token_priority": 1.425e-06,
     "litellm_provider": "fireworks_ai",
@@ -16348,6 +16466,7 @@
     "output_cost_per_token": 4e-06,
     "output_cost_per_token_priority": 6e-06,
     "source": "https://api.fireworks.ai/v1/serverless/models",
+    "successor_model": "fireworks_ai/kimi-k3",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -16442,7 +16561,7 @@
     "supports_vision": true
   },
   "fireworks_ai/kimi-latest": {
-    "alias_of": "fireworks_ai/accounts/fireworks/models/kimi-k3"
+    "alias_of": "fireworks_ai/accounts/fireworks/models/kimi-k3p1-pro"
   },
   "fireworks_ai/minimax-latest": {
     "alias_of": "fireworks_ai/accounts/fireworks/models/minimax-m3"
@@ -16523,6 +16642,7 @@
     "output_cost_per_token": 4.4e-06,
     "reasoning_effort_levels": [],
     "source": "https://api.friendli.ai/serverless/v1/models",
+    "successor_model": "friendliai/zai-org/GLM-5.3",
     "supports_function_calling": true,
     "supports_image_input": false,
     "supports_native_structured_output": true,
@@ -18141,6 +18261,7 @@
     "mode": "chat",
     "output_cost_per_token": 3e-06,
     "source": "https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart",
+    "successor_model": "moonshot/kimi-k3.1-pro",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -18896,6 +19017,7 @@
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.1e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "successor_model": "minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_native_structured_output": true,
@@ -18919,6 +19041,7 @@
     "output_cost_per_token_flex": 6e-07,
     "output_cost_per_token_priority": 2.1e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "successor_model": "minimax.minimax-m2.5",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_response_schema": true,
@@ -19248,6 +19371,7 @@
       "max"
     ],
     "source": "https://docs.mistral.ai/models/zai-glm-5-2",
+    "successor_model": "mistral/zai-glm-5-3",
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
     "supports_prompt_caching": true,
@@ -19333,6 +19457,7 @@
     "output_cost_per_token_batches": 1.25e-06,
     "output_cost_per_token_priority": 4.38e-06,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "successor_model": "moonshotai.kimi-k3.1",
     "supports_audio_input": false,
     "supports_function_calling": true,
     "supports_native_structured_output": true,
@@ -19351,6 +19476,7 @@
     "mode": "chat",
     "output_cost_per_token": 3e-06,
     "source": "https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart",
+    "successor_model": "moonshot/kimi-k3.1-pro",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -19927,7 +20053,7 @@
     "cache_read_input_token_cost": 1e-07,
     "input_cost_per_token": 4.5e-07,
     "litellm_provider": "nebius",
-    "max_input_tokens": 262144,
+    "max_input_tokens": 1000000,
     "mode": "chat",
     "output_cost_per_token": 3e-06,
     "source": "https://tokenfactory.nebius.com/api/public/models_info",
@@ -25195,6 +25321,7 @@
   },
   "scaleway/glm-5.2": {
     "deprecation_date": "2026-11-16",
+    "deprecation_source": "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
     "input_cost_per_token": 1.8e-06,
     "litellm_provider": "scaleway",
     "max_input_tokens": 256000,
@@ -25217,12 +25344,14 @@
   },
   "scaleway/qwen/qwen3-coder-30b-a3b-instruct": {
     "deprecation_date": "2026-10-01",
+    "deprecation_source": "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
     "input_cost_per_token": 2e-07,
     "litellm_provider": "scaleway",
     "max_input_tokens": 128000,
     "max_output_tokens": 32768,
     "mode": "chat",
     "output_cost_per_token": 8e-07,
+    "successor_model": "scaleway/qwen/qwen3.6-35b-a3b",
     "supports_function_calling": true
   },
   "scaleway/qwen/qwen3-embedding-8b": {
@@ -26156,7 +26285,8 @@
     "max_input_tokens": 196608,
     "mode": "chat",
     "output_cost_per_token": 1.2e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/MiniMaxAI/MiniMax-M3.1-Flash"
   },
   "together_ai/MiniMaxAI/MiniMax-M3": {
     "cache_read_input_token_cost": 6e-08,
@@ -26187,7 +26317,9 @@
     "mode": "chat",
     "output_cost_per_token": 6e-07,
     "source": "https://www.together.ai/pricing",
-    "supports_prompt_caching": true
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_response_schema": true
   },
   "together_ai/Qwen/Qwen-Image-2.0": {
     "litellm_provider": "together_ai",
@@ -26363,7 +26495,9 @@
     "mode": "chat",
     "output_cost_per_token": 3e-06,
     "source": "https://api.together.ai/v1/models",
-    "supports_reasoning": true
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true
   },
   "together_ai/Qwen/Qwen3.7-Max": {
     "cache_read_input_token_cost": 5e-07,
@@ -26374,7 +26508,9 @@
     "mode": "chat",
     "output_cost_per_token": 7.5e-06,
     "source": "https://www.together.ai/pricing",
-    "supports_prompt_caching": true
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_response_schema": true
   },
   "together_ai/Qwen/Qwen3.7-Plus": {
     "input_cost_per_token": 3.2e-07,
@@ -26383,7 +26519,9 @@
     "max_output_tokens": 1000000,
     "mode": "chat",
     "output_cost_per_token": 1.28e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "supports_function_calling": true,
+    "supports_response_schema": true
   },
   "together_ai/Qwen/Qwen3.8-2.4T-A95B": {
     "cache_read_input_token_cost": 2.5e-07,
@@ -26406,7 +26544,9 @@
     "max_output_tokens": 1000000,
     "mode": "chat",
     "output_cost_per_token": 4.7e-07,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "supports_function_calling": true,
+    "supports_response_schema": true
   },
   "together_ai/Qwen/Qwen4-Max": {
     "cache_read_input_token_cost": 7.125e-08,
@@ -26452,6 +26592,7 @@
     },
     "mode": "chat",
     "output_cost_per_token": 1.25e-06,
+    "successor_model": "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_response_schema": true,
@@ -26466,7 +26607,8 @@
     "max_output_tokens": 131072,
     "mode": "chat",
     "output_cost_per_token": 1.7e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813"
   },
   "together_ai/deepseek-ai/DeepSeek-V4-Flash-0731": {
     "cache_read_input_token_cost": 3e-08,
@@ -26553,6 +26695,7 @@
     "mode": "chat",
     "output_cost_per_token": 3e-06,
     "source": "https://www.together.ai/models/kimi-k2-instruct",
+    "successor_model": "together_ai/moonshotai/Kimi-K3.1-Pro",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_response_schema": true,
@@ -26576,7 +26719,8 @@
     "max_output_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 4.5e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/moonshotai/Kimi-K3.1-Pro"
   },
   "together_ai/moonshotai/Kimi-K2.7-Code": {
     "cache_read_input_token_cost": 1.9e-07,
@@ -26588,7 +26732,8 @@
     "max_output_tokens": 262144,
     "mode": "chat",
     "output_cost_per_token": 4e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/moonshotai/Kimi-K3.1-Pro"
   },
   "together_ai/moonshotai/Kimi-K3": {
     "cache_read_input_token_cost": 3e-07,
@@ -26673,7 +26818,8 @@
     "max_output_tokens": 202752,
     "mode": "chat",
     "output_cost_per_token": 2e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/zai-org/GLM-5.3"
   },
   "together_ai/zai-org/GLM-5": {
     "deprecation_date": "2026-06-22",
@@ -26684,7 +26830,8 @@
     "max_output_tokens": 202752,
     "mode": "chat",
     "output_cost_per_token": 3.2e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/zai-org/GLM-5.3"
   },
   "together_ai/zai-org/GLM-5.1": {
     "cache_read_input_token_cost": 2.6e-07,
@@ -26696,7 +26843,8 @@
     "max_output_tokens": 202752,
     "mode": "chat",
     "output_cost_per_token": 4.4e-06,
-    "source": "https://api.together.ai/v1/models"
+    "source": "https://api.together.ai/v1/models",
+    "successor_model": "together_ai/zai-org/GLM-5.3"
   },
   "together_ai/zai-org/GLM-5.2": {
     "cache_read_input_token_cost": 2.6e-07,
@@ -27004,6 +27152,7 @@
   },
   "vertex_ai/deepseek-ai/deepseek-ocr-maas": {
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 3e-07,
     "litellm_provider": "vertex_ai",
     "mode": "ocr",
@@ -27016,6 +27165,7 @@
   },
   "vertex_ai/deepseek-ai/deepseek-r1-0528-maas": {
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 1.35e-06,
     "input_cost_per_token_batches": 6.75e-07,
     "litellm_provider": "vertex_ai-deepseek_models",
@@ -27038,6 +27188,7 @@
   "vertex_ai/deepseek-ai/deepseek-v3.1-maas": {
     "cache_read_input_token_cost": 6e-08,
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 6e-07,
     "input_cost_per_token_batches": 3e-07,
     "litellm_provider": "vertex_ai-deepseek_models",
@@ -27047,6 +27198,7 @@
     "output_cost_per_token": 1.7e-06,
     "output_cost_per_token_batches": 8.5e-07,
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "successor_model": "vertex_ai/deepseek-ai/deepseek-v4.1-flash-maas",
     "supported_regions": [
       "us-central1"
     ],
@@ -27059,6 +27211,7 @@
   "vertex_ai/deepseek-ai/deepseek-v3.2-maas": {
     "cache_read_input_token_cost": 5.6e-08,
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 5.6e-07,
     "input_cost_per_token_batches": 2.8e-07,
     "litellm_provider": "vertex_ai-deepseek_models",
@@ -27068,6 +27221,7 @@
     "output_cost_per_token": 1.68e-06,
     "output_cost_per_token_batches": 8.4e-07,
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "successor_model": "vertex_ai/deepseek-ai/deepseek-v4.1-flash-maas",
     "supported_regions": [
       "global"
     ],
@@ -27101,6 +27255,7 @@
   "vertex_ai/minimaxai/minimax-m2-maas": {
     "cache_read_input_token_cost": 3e-08,
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 3e-07,
     "litellm_provider": "vertex_ai-minimax_models",
     "max_input_tokens": 196608,
@@ -27114,6 +27269,7 @@
   "vertex_ai/moonshotai/kimi-k2-thinking-maas": {
     "cache_read_input_token_cost": 6e-08,
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "vertex_ai-moonshot_models",
     "max_input_tokens": 256000,
@@ -27128,6 +27284,7 @@
   },
   "vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas": {
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 2.2e-07,
     "input_cost_per_token_batches": 1.1e-07,
     "litellm_provider": "vertex_ai-qwen_models",
@@ -27148,6 +27305,7 @@
   "vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas": {
     "cache_read_input_token_cost": 2.2e-08,
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 2.2e-07,
     "input_cost_per_token_batches": 1.1e-07,
     "litellm_provider": "vertex_ai-qwen_models",
@@ -27166,6 +27324,7 @@
   },
   "vertex_ai/qwen/qwen3-next-80b-a3b-instruct-maas": {
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "vertex_ai-qwen_models",
     "max_input_tokens": 262144,
@@ -27182,6 +27341,7 @@
   },
   "vertex_ai/qwen/qwen3-next-80b-a3b-thinking-maas": {
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "vertex_ai-qwen_models",
     "max_input_tokens": 262144,
@@ -27199,6 +27359,7 @@
   "vertex_ai/zai-org/glm-4.7-maas": {
     "cache_read_input_token_cost": 6e-08,
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "vertex_ai-zai_models",
     "max_input_tokens": 200000,
@@ -27218,6 +27379,7 @@
   "vertex_ai/zai-org/glm-5-maas": {
     "cache_read_input_token_cost": 1e-07,
     "deprecation_date": "2026-10-21",
+    "deprecation_source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
     "input_cost_per_token": 1e-06,
     "litellm_provider": "vertex_ai-zai_models",
     "max_input_tokens": 200000,
@@ -27579,6 +27741,7 @@
   },
   "wandb/OpenPipe/Qwen3-14B-Instruct": {
     "deprecation_date": "2026-10-05",
+    "deprecation_source": "https://docs.wandb.ai/inference/lifecycle",
     "input_cost_per_token": 5e-08,
     "litellm_provider": "wandb",
     "max_input_tokens": 32800,
@@ -27586,10 +27749,12 @@
     "mode": "chat",
     "output_cost_per_token": 2.2e-07,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "successor_model": "wandb/Qwen/Qwen3.8-27B",
     "supports_vision": false
   },
   "wandb/Qwen/Qwen3-30B-A3B-Instruct-2507": {
     "deprecation_date": "2026-10-05",
+    "deprecation_source": "https://docs.wandb.ai/inference/lifecycle",
     "input_cost_per_token": 1e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 262000,
@@ -27597,10 +27762,12 @@
     "mode": "chat",
     "output_cost_per_token": 3e-07,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "successor_model": "wandb/Qwen/Qwen3.6-35B-A3B",
     "supports_vision": false
   },
   "wandb/Qwen/Qwen3.5-35B-A3B": {
     "deprecation_date": "2026-10-05",
+    "deprecation_source": "https://docs.wandb.ai/inference/lifecycle",
     "input_cost_per_token": 2.5e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 262000,
@@ -27608,12 +27775,14 @@
     "mode": "chat",
     "output_cost_per_token": 1.25e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "successor_model": "wandb/Qwen/Qwen3.6-35B-A3B",
     "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/Qwen/Qwen3.6-27B": {
     "cache_read_input_token_cost": 1.2e-07,
     "deprecation_date": "2026-10-05",
+    "deprecation_source": "https://docs.wandb.ai/inference/lifecycle",
     "input_cost_per_token": 6e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 262000,
@@ -27621,6 +27790,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.6e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "successor_model": "wandb/Qwen/Qwen3.8-27B",
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_vision": true
@@ -27666,6 +27836,7 @@
   "wandb/deepseek-ai/DeepSeek-V4-Flash": {
     "cache_read_input_token_cost": 7e-08,
     "deprecation_date": "2026-10-05",
+    "deprecation_source": "https://docs.wandb.ai/inference/lifecycle",
     "input_cost_per_token": 1.4e-07,
     "litellm_provider": "wandb",
     "max_input_tokens": 1049000,
@@ -27673,6 +27844,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.8e-07,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "successor_model": "wandb/deepseek-ai/DeepSeek-V4-Flash-0731",
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_vision": false
@@ -27693,6 +27865,7 @@
   "wandb/deepseek-ai/DeepSeek-V4-Pro": {
     "cache_read_input_token_cost": 2e-07,
     "deprecation_date": "2026-10-05",
+    "deprecation_source": "https://docs.wandb.ai/inference/lifecycle",
     "input_cost_per_token": 1.15e-06,
     "litellm_provider": "wandb",
     "max_input_tokens": 1049000,
@@ -27700,6 +27873,7 @@
     "mode": "chat",
     "output_cost_per_token": 2.55e-06,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "successor_model": "wandb/deepseek-ai/DeepSeek-V4-Pro-0813",
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_vision": false
